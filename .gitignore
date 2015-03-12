@@ -1,3 +1,6 @@
+# Wordpress config file
+wp-config.php
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
