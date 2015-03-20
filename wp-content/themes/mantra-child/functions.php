@@ -6,5 +6,16 @@ function theme_enqueue_styles() {
         get_stylesheet_directory_uri() . '/style.css',
         array('parent-style')
     );
+}	
+
+function mycustom_scripts_method() {
+    global $wp_query;
+	wp_enqueue_script(
+		'cycle2',
+		get_stylesheet_directory_uri() . '/js/jquery.cycle2.min.js',
+		array( 'jquery' )
+	);
 }
+
+add_action( 'wp_enqueue_scripts', 'mycustom_scripts_method' );
 ?>
