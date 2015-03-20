@@ -13,3 +13,38 @@
  * Copyright (c) 2011-2013 Cryout Creations
  * http://www.cryoutcreations.eu
 */
+
+
+/*
+LAYOUT: Custom Front Page
+DESCRIPTION: One centered column with no sidebar
+*/
+
+.one-column #content {
+	margin: 0 20px;
+	width:auto;
+	float:none;
+}
+
+#cycler { 
+	width: 80%;
+	min-width: 200px;
+	max-width: 800px; 
+	margin: 10px auto; 
+	padding: 0; 
+	position: relative;
+}
+#adv-custom-pager {
+	display: inline;
+	float: right;
+	clear: none;
+}
+#cycler li img {
+	height: auto;
+	width: 100;
+}
+
+.cycle-slideshow {
+	display: inline-block;
+	clear: none;
+}
