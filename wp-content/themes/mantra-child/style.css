@@ -28,7 +28,7 @@ DESCRIPTION: One centered column with no sidebar
 
 #cycler { 
 	border: 2px solid black;
-	width: 80%;
+	width: 90%;
 	min-width: 200px;
 	max-width: 900px; 
 	margin: auto; 
@@ -38,7 +38,7 @@ DESCRIPTION: One centered column with no sidebar
 }
 
 
-.cycle-slideshow img { 
+.cycle-slideshow div { 
     /* 
     some of these styles will be set by the plugin (by default) but setting them here
     helps avoid flash-of-unstyled-content
@@ -46,6 +46,11 @@ DESCRIPTION: One centered column with no sidebar
     position: absolute; top: 0; left: 0;
     width: 100%; padding: 0; display: block;
 }
+.cycle-slideshow div a img{
+    position: relative; top: 0; left: 0;
+    width: 100%; padding: 0; display: block;
+}
+
 
 #adv-custom-pager {
 	display: inline;
@@ -55,7 +60,7 @@ DESCRIPTION: One centered column with no sidebar
 #cycler li img {
 	height: 100px;
 	width: 400px;
-	padding: 0;
+	padding-left: 5px;
 }
 
 .cycle-slideshow {

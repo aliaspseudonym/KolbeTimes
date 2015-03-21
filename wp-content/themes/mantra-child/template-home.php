@@ -13,7 +13,8 @@
  */
 
 get_header(); ?>
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="http://malsup.github.com/jquery.cycle2.js"></script>
 
 			
 
@@ -40,18 +41,40 @@ get_header(); ?>
 
 	<div class="cycle-slideshow" 
     data-cycle-fx=scrollHorz
-    data-cycle-timeout=0
+	data-cycle-slides=">div"
+    data-cycle-timeout=2000
     data-cycle-pager="#adv-custom-pager"
-    data-cycle-pager-template="<li><a href=#><img src='{{src}}' height=100 width=500></a></li>"
+    data-cycle-pager-template=""
     >
-    <img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Jody-and-LaurieCROP4-2.jpg">
-    <img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Dream-Centre-article_no-caption-2.jpg">
-    <img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Youth-Company_signsSMALL-2.jpg">
-    <img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Students-modeling-their-outfits-2.jpeg">
+	<div>
+		<a class="link" href="http://localhost/kolbetimes/wp-content/uploads/2015/03/Jody-and-LaurieCROP4-2.jpg">
+			<img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Jody-and-LaurieCROP4-2.jpg" width=100%>
+		</a>
+	</div>
+	<div>
+		<a class="link" href="http://localhost/kolbetimes/calgary-dream-centre-a-focus-on-compassion/">
+			<img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Dream-Centre-article_no-caption-2.jpg">
+		</a>
+	</div>
+	<div>
+		<a class="link" href="http://localhost/kolbetimes/corps-bara-youth-dance-company-mercy/">
+			<img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Youth-Company_signsSMALL-2.jpg">
+		</a>
+	</div>
+	<div>
+		<a class="link" href="http://localhost/kolbetimes/once-you-know-the-spirit-of-mercy-in-rwanda/">
+			<img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Students-modeling-their-outfits-2.jpeg">
+		</a>
+	</div>
 </div></td>
 <!-- empty element for pager links -->
 <td><ul>
-	<div id=adv-custom-pager class="center external"></div>
+	<div id=adv-custom-pager class="center external">
+		<li><a href="#"><img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Jody-and-LaurieCROP4-2.jpg" height=100 width=500></a></li>
+		<li><a href="#"><img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Dream-Centre-article_no-caption-2.jpg" height=100 width=500></a></li>
+		<li><a href="#"><img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Youth-Company_signsSMALL-2.jpg" height=100 width=500></a></li>
+		<li><a href="#"><img src='http://localhost/kolbetimes/wp-content/uploads/2015/03/Students-modeling-their-outfits-2.jpeg' height=100 width=500></a></li>
+	</div>
 </ul></td></table>
 </div> <!--cycler-->
 
