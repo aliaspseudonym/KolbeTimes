@@ -13,8 +13,7 @@
  */
 
 get_header(); ?>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script src="http://malsup.github.com/jquery.cycle2.js"></script>
+
 
 			
 
@@ -47,7 +46,7 @@ get_header(); ?>
     data-cycle-pager-template=""
     >
 	<div>
-		<a class="link" href="http://localhost/kolbetimes/wp-content/uploads/2015/03/Jody-and-LaurieCROP4-2.jpg">
+		<a class="link" href="http://localhost/kolbetimes/857/">
 			<img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Jody-and-LaurieCROP4-2.jpg" width=100%>
 		</a>
 	</div>
