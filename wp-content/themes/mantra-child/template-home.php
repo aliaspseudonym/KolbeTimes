@@ -42,12 +42,12 @@ get_header(); ?>
     data-cycle-fx=scrollHorz
     data-cycle-timeout=0
     data-cycle-pager="#adv-custom-pager"
-    data-cycle-pager-template="<li><a href=#><img src='{{src}}' width=100 height=100></a></li>"
+    data-cycle-pager-template="<li><a href=#><img src='{{src}}' height=100 width=500></a></li>"
     >
-    <img src="http://malsup.github.io/images/p1.jpg">
-    <img src="http://malsup.github.io/images/p2.jpg">
-    <img src="http://malsup.github.io/images/p3.jpg">
-    <img src="http://malsup.github.io/images/p4.jpg">
+    <img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Jody-and-LaurieCROP4-2.jpg">
+    <img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Dream-Centre-article_no-caption-2.jpg">
+    <img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Youth-Company_signsSMALL-2.jpg">
+    <img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Students-modeling-their-outfits-2.jpeg">
 </div></td>
 <!-- empty element for pager links -->
 <td><ul>

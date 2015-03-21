@@ -27,21 +27,35 @@ DESCRIPTION: One centered column with no sidebar
 }
 
 #cycler { 
+	border: 2px solid black;
 	width: 80%;
 	min-width: 200px;
-	max-width: 800px; 
-	margin: 10px auto; 
+	max-width: 900px; 
+	margin: auto; 
 	padding: 0; 
 	position: relative;
+	background-color: black;
 }
+
+
+.cycle-slideshow img { 
+    /* 
+    some of these styles will be set by the plugin (by default) but setting them here
+    helps avoid flash-of-unstyled-content
+    */
+    position: absolute; top: 0; left: 0;
+    width: 100%; padding: 0; display: block;
+}
+
 #adv-custom-pager {
 	display: inline;
 	float: right;
 	clear: none;
 }
 #cycler li img {
-	height: auto;
-	width: 100;
+	height: 100px;
+	width: 400px;
+	padding: 0;
 }
 
 .cycle-slideshow {
