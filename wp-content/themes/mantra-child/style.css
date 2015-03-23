@@ -27,22 +27,20 @@ DESCRIPTION: One centered column with no sidebar
 }
 
 #cycler { 
-	border: 2px solid black;
-	width: 90%;
+	border: 5px solid black;
+	width: 85%;
 	min-width: 200px;
-	max-width: 900px; 
 	margin: auto; 
 	padding: 0; 
 	position: relative;
 	background-color: black;
+	margin-bottom: 50px;
+	overflow: hidden;
+	box-shadow: 3px 3px 2px grey;
 }
 
 
 .cycle-slideshow div { 
-    /* 
-    some of these styles will be set by the plugin (by default) but setting them here
-    helps avoid flash-of-unstyled-content
-    */
     position: absolute; top: 0; left: 0;
     width: 100%; padding: 0; display: block;
 }
@@ -51,19 +49,44 @@ DESCRIPTION: One centered column with no sidebar
     width: 100%; padding: 0; display: block;
 }
 
+.cycle-slideshow {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 83.5%;
+	border-right: 5px black;
+
+}
 
 #adv-custom-pager {
-	display: inline;
-	float: right;
-	clear: none;
+	position: absolute;
+	padding: none;
+	top: 0;
+	right: 0;
+	width: 16%;
 }
-#cycler li img {
-	height: 100px;
-	width: 400px;
-	padding-left: 5px;
+#adv-custom-pager a img {
+	padding: none;
+
 }
 
-.cycle-slideshow {
-	display: inline-block;
-	clear: none;
+#cycler ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
 }
+
+#sidebar {
+width: 15%;
+border-right: black 2px;
+float: left;
+height: 500 px;
+background-color: blue;
+display: block;
+position: relative;
+}
+
+#grid {
+
+}
+

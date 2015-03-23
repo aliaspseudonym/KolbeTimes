@@ -13,41 +13,21 @@
  */
 
 get_header(); ?>
-
-
-			
-
-<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-
-				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<h1 class="entry-title"><?php the_title(); ?></h1>
-					<div class="entry-content">
-						<?php the_content(); ?>
-						<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'mantra' ), 'after' => '</div>' ) ); ?>
-						<?php edit_post_link( __( 'Edit', 'mantra' ), '<span class="edit-link">', '</span>' ); ?>
-					</div><!-- .entry-content -->
-				</div><!-- #post-## -->
-
-				<?php comments_template( '', true ); ?>
-
-<?php endwhile; ?>
-
 		<section id="container" class="one-column">
 			<div id="content" role="main">
-		<div>
-	<table id="cycler">
-		<tr><td>
-
+<section id="the-slideshow">
+	<div id="cycler">
 	<div class="cycle-slideshow" 
     data-cycle-fx=scrollHorz
 	data-cycle-slides=">div"
-    data-cycle-timeout=2000
+    data-cycle-timeout=3000
     data-cycle-pager="#adv-custom-pager"
     data-cycle-pager-template=""
+	data-cycle-pause-on-hover="true"
     >
 	<div>
 		<a class="link" href="http://localhost/kolbetimes/857/">
-			<img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Jody-and-LaurieCROP4-2.jpg" width=100%>
+			<img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Jody-and-LaurieCROP4-2.jpg">
 		</a>
 	</div>
 	<div>
@@ -65,17 +45,34 @@ get_header(); ?>
 			<img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Students-modeling-their-outfits-2.jpeg">
 		</a>
 	</div>
-</div></td>
-<!-- empty element for pager links -->
-<td><ul>
-	<div id=adv-custom-pager class="center external">
-		<li><a href="#"><img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Jody-and-LaurieCROP4-2.jpg" height=100 width=500></a></li>
-		<li><a href="#"><img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Dream-Centre-article_no-caption-2.jpg" height=100 width=500></a></li>
-		<li><a href="#"><img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Youth-Company_signsSMALL-2.jpg" height=100 width=500></a></li>
-		<li><a href="#"><img src='http://localhost/kolbetimes/wp-content/uploads/2015/03/Students-modeling-their-outfits-2.jpeg' height=100 width=500></a></li>
+		<div>
+		<a class="link" href="http://localhost/kolbetimes/857/">
+			<img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Jody-and-LaurieCROP4-2.jpg">
+		</a>
 	</div>
-</ul></td></table>
+</div> <!-- cycle-slideshow -->
+<ul>
+	<div id=adv-custom-pager>
+		<li><a href="#"><img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Jody-and-LaurieCROP4-2.jpg"></a></li>
+		<li><a href="#"><img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Dream-Centre-article_no-caption-2.jpg"></a></li>
+		<li><a href="#"><img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Youth-Company_signsSMALL-2.jpg"></a></li>
+		<li><a href="#"><img src='http://localhost/kolbetimes/wp-content/uploads/2015/03/Students-modeling-their-outfits-2.jpeg'></a></li>
+		<li><a href="#"><img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Jody-and-LaurieCROP4-2.jpg"></a></li>
+	</div> <!-- adv-custom-pager -->
+</ul>
 </div> <!--cycler-->
+</section> <!--the-slideshow-->
+<section id= "other-content">
+<div id="sidebar">
+<p>This is the sidebar</p>
+
+</div> <!-- sidebar -->
+
+<div id="grid">
+	<div class="square">
+
+	</div>
+</div> <!-- grid -->
 
 			
 
