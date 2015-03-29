@@ -17,11 +17,11 @@
 
 /*
 LAYOUT: Custom Front Page
-DESCRIPTION: One centered column with no sidebar
+DESCRIPTION: Custom front page for Kolbe Times
 */
 
 .one-column #content {
-	margin: 0 20px;
+	margin: 0 10px;
 	width:auto;
 	float:none;
 }
@@ -34,7 +34,7 @@ DESCRIPTION: One centered column with no sidebar
 	padding: 0; 
 	position: relative;
 	background-color: black;
-	margin-bottom: 50px;
+	margin-bottom: 10px;
 	overflow: hidden;
 	box-shadow: 3px 3px 2px grey;
 }
@@ -76,17 +76,93 @@ DESCRIPTION: One centered column with no sidebar
     margin: 0px;
 }
 
-#sidebar {
-width: 15%;
-border-right: black 2px;
-float: left;
-height: 500 px;
-background-color: blue;
-display: block;
-position: relative;
+#quote {
+	width: 75%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+#quote h1 {
+	font-size: xx-large;
+	text-align: center;
+	line-height: 110%
+}
+#quote p {
+	font-style: italic;
+	font-size: large;
+	text-align: right;
+}
+
+
+#sidebar  {
+	display:block;
+	float: left;
+	overflow: hidden;
+	width: 15%;
+	border-right:1px dashed #EAEAEA;
+	padding-left:10px;
+	padding-top:10px;
+}
+
+#sidebar ul {
+	padding: 10%;
+	line-height: 200%;
 }
 
 #grid {
+	width: 80%;
+	display: block;
+	float: left;
+	padding-bottom: 20px;
+}
+
+#grid img {
+	display: inline;
+	max-height: 175px;
+	max-width: 175px;
+	float: left;
+	position: relative;
+	left: 5%;
+	width: 45%;
+}
+#grid  h1 {
+	font-weight: bold;
+	font-size: medium;
+	text-indent: 5%;
+}
+#grid p {
 
 }
+
+.column {
+width: 33%;
+height: 200 px;
+border-left: 2px solid grey;
+position: relative;
+float: left;
+}
+.column:first-child {
+	border: none;
+}
+
+.column div {
+	clear: both;
+	padding-top: 20px;
+	margin-bottom: 20px;
+}
+.column div:nth-child(2) {
+	border-top: 2px solid grey;
+}
+.column div div {
+	clear: none;
+	padding: none;
+	margin: none;
+	float: right;
+	border: none;
+	display: block;
+	width: 50%;
+}
+
 
