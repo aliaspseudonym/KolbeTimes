@@ -20,11 +20,7 @@ LAYOUT: Custom Front Page
 DESCRIPTION: Custom front page for Kolbe Times
 */
 
-.one-column #content {
-	margin: 0 10px;
-	width:auto;
-	float:none;
-}
+
 
 #cycler { 
 	border: 5px solid black;
@@ -102,14 +98,11 @@ DESCRIPTION: Custom front page for Kolbe Times
 	overflow: hidden;
 	width: 15%;
 	border-right:1px dashed #EAEAEA;
-	padding-left:10px;
-	padding-top:10px;
+}
+#sidebar  div {
+	border-left: none;
 }
 
-#sidebar ul {
-	padding: 10%;
-	line-height: 200%;
-}
 
 #grid {
 	width: 80%;

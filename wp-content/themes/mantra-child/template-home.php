@@ -77,36 +77,7 @@ get_header(); ?>
 			
 			<section id= "other-content">
 <div id="sidebar">
-
-	<ul>
-				<li id="search-2" class="widget-container widget_search"> 
-<form method="get" id="searchform"
-action="http://localhost/kolbetimes//">
-<input type="text" value="Search"
-name="s" id="s"
-onblur="if (this.value == '')
-{this.value = 'Search';}"
-onfocus="if (this.value == 'Search')
-{this.value = '';}" />
-<input type="submit" id="searchsubmit" value="OK" />
-</form></li>	
-
-<li>
-	<h4>This is the sidebar</h4>
-	<ul>
-		<li><a href="#">This is a</a></li>
-		<li>list of a</li>
-		<li>bunch of stuff</li>
-		<li>which seems</li>
-		<li>like the kind</li>
-		<li>of thing we</li>
-		<li>will probably</li>
-		<li>end up putting</li>
-		<li>in the sidebar.</li>
-	</ul>
-</li>
-
-
+<?php get_sidebar(); ?>
 </div> <!-- #sidebar -->
 
 <div id="grid">
@@ -160,7 +131,6 @@ onfocus="if (this.value == 'Search')
 	</div>
 </div> <!-- grid -->
 
-			
 		</section><!-- #container -->
 
 <?php get_footer(); ?>
