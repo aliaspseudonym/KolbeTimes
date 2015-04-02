@@ -20,6 +20,64 @@ LAYOUT: Custom Front Page
 DESCRIPTION: Custom front page for Kolbe Times
 */
 
+/* Adaptive Styles */
+
+@media (max-width: 800px) {
+	#adv-custom-pager {
+	clear: both;
+	float: none;
+	display: inline;
+	position: relative !important;
+	width: 100%
+	}
+	#adv-custom-pager a {
+		display: inline;
+		margin: auto;
+	}
+	#adv-custom-pager img {
+		display: inline;
+		width: 18.5%;
+		float: left;
+		margin-left: 1.25%;
+		margin-top: 5px;
+	}
+	.cycle-slideshow {
+		clear: both;
+		width: 100% !important;
+	}
+	#quote h1 {
+		font-size: x-large !important;
+	}
+	#quote p {
+		font-size: medium !important;
+	}
+}
+
+@media (max-width: 650px) {
+	#cycler {
+		width: 100%;
+	}
+	#grid div {
+		float: none;
+		width: auto;
+		clear: both;
+		border-left: none !important;
+	}
+	#grid div div {	
+		border-top: none !important;
+		border-bottom: 2px solid gray;
+	}
+	.column {
+		width: 100% !important;
+	}
+}
+
+
+
+
+.entry-title {
+	display: none;
+}
 
 
 #cycler { 
@@ -40,18 +98,15 @@ DESCRIPTION: Custom front page for Kolbe Times
     position: absolute; top: 0; left: 0;
     width: 100%; padding: 0; display: block;
 }
-.cycle-slideshow div a img{
+.cycle-slideshow img{
     position: relative; top: 0; left: 0;
     width: 100%; padding: 0; display: block;
 }
 
 .cycle-slideshow {
 	position: relative;
-	top: 0;
-	left: 0;
 	width: 83.5%;
 	border-right: 5px black;
-
 }
 
 #adv-custom-pager {
@@ -126,27 +181,27 @@ DESCRIPTION: Custom front page for Kolbe Times
 	text-indent: 5%;
 }
 
-.column {
-width: 33%;
+#grid .column {
 height: 200 px;
 border-left: 2px solid gray;
 position: relative;
 float: left;
-min-width: 320 px;
+width: 33%;
 }
-.column:first-child {
+
+#grid .column:first-child {
 	border: none;
 }
 
-.column div {
+#grid .column div {
 	clear: both;
 	padding-top: 20px;
 	margin-bottom: 20px;
 }
-.column div:nth-child(2) {
+#grid .column div:nth-child(2) {
 	border-top: 1px solid gray;
 }
-.column div div {
+#grid .column div div {
 	clear: none;
 	padding: none;
 	margin: none;
