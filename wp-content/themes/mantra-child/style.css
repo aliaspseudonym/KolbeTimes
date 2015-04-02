@@ -91,23 +91,23 @@ DESCRIPTION: Custom front page for Kolbe Times
 	text-align: right;
 }
 
-
+/* No sidebar in this version.
 #sidebar  {
 	display:block;
 	float: left;
 	overflow: hidden;
 	width: 15%;
-	border-right:1px dashed #EAEAEA;
+	border-right:2px dashed #EAEAEA;
 }
 #sidebar  div {
 	border-left: none;
 }
-
+*/
 
 #grid {
-	width: 80%;
+	width: 95%;
 	display: block;
-	float: left;
+	margin: auto;
 	padding-bottom: 20px;
 }
 
@@ -125,16 +125,14 @@ DESCRIPTION: Custom front page for Kolbe Times
 	font-size: medium;
 	text-indent: 5%;
 }
-#grid p {
-
-}
 
 .column {
 width: 33%;
 height: 200 px;
-border-left: 2px solid grey;
+border-left: 2px solid gray;
 position: relative;
 float: left;
+min-width: 320 px;
 }
 .column:first-child {
 	border: none;
@@ -146,7 +144,7 @@ float: left;
 	margin-bottom: 20px;
 }
 .column div:nth-child(2) {
-	border-top: 2px solid grey;
+	border-top: 1px solid gray;
 }
 .column div div {
 	clear: none;
@@ -158,4 +156,44 @@ float: left;
 	width: 50%;
 }
 
+#writers  {
+	margin: auto;
+	width: 100%;
+	display: block;
+	position: relative;
+}
 
+#writers div {
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 19%;
+	float: left;
+	border-left: 2px solid gray;
+}
+
+#writers div img {
+	width: 80%;
+	margin: auto;
+	display: block;
+}
+
+#writers h1 {
+	font-size: large;
+	text-align: center;
+	line-height: 110%;
+	font-weight: bold;
+}
+#writers p {
+	width: 90%;
+	margin: auto;
+}
+
+#writers ul {
+	width: 90%;
+	margin: auto;
+	text-align: center;
+}
+#writers li {
+	display: inline;
+}

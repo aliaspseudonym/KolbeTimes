@@ -27,37 +27,37 @@ get_header(); ?>
     >
 	<div>
 		<a class="link" href="http://localhost/kolbetimes/857/">
-			<img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Jody-and-LaurieCROP4-2.jpg">
+			<img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Jody-and-LaurieCROP4-2.jpg"/>
 		</a>
 	</div>
 	<div>
 		<a class="link" href="http://localhost/kolbetimes/calgary-dream-centre-a-focus-on-compassion/">
-			<img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Dream-Centre-article_no-caption-2.jpg">
+			<img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Dream-Centre-article_no-caption-2.jpg"/>
 		</a>
 	</div>
 	<div>
 		<a class="link" href="http://localhost/kolbetimes/corps-bara-youth-dance-company-mercy/">
-			<img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Youth-Company_signsSMALL-2.jpg">
+			<img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Youth-Company_signsSMALL-2.jpg"/>
 		</a>
 	</div>
 	<div>
 		<a class="link" href="http://localhost/kolbetimes/once-you-know-the-spirit-of-mercy-in-rwanda/">
-			<img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Students-modeling-their-outfits-2.jpeg">
+			<img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Students-modeling-their-outfits-2.jpeg"/>
 		</a>
 	</div>
 		<div>
 		<a class="link" href="http://localhost/kolbetimes/857/">
-			<img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Jody-and-LaurieCROP4-2.jpg">
+			<img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Jody-and-LaurieCROP4-2.jpg"/>
 		</a>
 	</div>
 </div> <!-- cycle-slideshow -->
 <ul>
 	<div id=adv-custom-pager>
-		<li><a href="#"><img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Jody-and-LaurieCROP4-2.jpg"></a></li>
-		<li><a href="#"><img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Dream-Centre-article_no-caption-2.jpg"></a></li>
-		<li><a href="#"><img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Youth-Company_signsSMALL-2.jpg"></a></li>
-		<li><a href="#"><img src='http://localhost/kolbetimes/wp-content/uploads/2015/03/Students-modeling-their-outfits-2.jpeg'></a></li>
-		<li><a href="#"><img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Jody-and-LaurieCROP4-2.jpg"></a></li>
+		<li><a href="#"><img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Jody-and-LaurieCROP4-2.jpg"/></a></li>
+		<li><a href="#"><img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Dream-Centre-article_no-caption-2.jpg"/></a></li>
+		<li><a href="#"><img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Youth-Company_signsSMALL-2.jpg"/></a></li>
+		<li><a href="#"><img src='http://localhost/kolbetimes/wp-content/uploads/2015/03/Students-modeling-their-outfits-2.jpeg'/></a></li>
+		<li><a href="#"><img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Jody-and-LaurieCROP4-2.jpg"/></a></li>
 	</div> <!-- adv-custom-pager -->
 </ul>
 </div> <!--cycler-->
@@ -76,9 +76,6 @@ get_header(); ?>
 			
 			
 			<section id= "other-content">
-<div id="sidebar">
-<?php get_sidebar(); ?>
-</div> <!-- #sidebar -->
 
 <div id="grid">
 	<div class="column">
@@ -87,14 +84,14 @@ get_header(); ?>
 				<h1>Category A</h1>
 				<p>A one or two sentence description of the category.</p>
 			</div>
-			<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/mc_logo_new.png">
+			<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/mc_logo_new.png"/>
 		</div>
 		<div>
 			<div>
 				<h1>Category B</h1>
 				<p>A one or two sentence description of the category.</p>
 			</div>
-			<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/mc_logo_new.png">
+			<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/mc_logo_new.png"/>
 		</div>
 	</div>
 	<div class="column">
@@ -103,14 +100,14 @@ get_header(); ?>
 				<h1>Category C</h1>
 				<p>A one or two sentence description of the category.</p>
 			</div>
-			<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/mc_logo_new.png">
+			<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/mc_logo_new.png"/>
 		</div>
 		<div>
 			<div>
 				<h1> Category D</h1>
 				<p>A one or two sentence description of the category.</p>
 			</div>
-			<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/mc_logo_new.png">
+			<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/mc_logo_new.png"/>
 		</div>
 	</div>
 	<div class="column">
@@ -119,18 +116,77 @@ get_header(); ?>
 				<h1>Category E</h1>
 				<p>A one or two sentence description of the category.</p>
 			</div>
-			<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/mc_logo_new.png">
+			<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/mc_logo_new.png"/>
 		</div>
 		<div>
 			<div>
 				<h1>Category F</h1>
 				<p>A one or two sentence description of the category.</p>
 			</div>
-			<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/mc_logo_new.png">
+			<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/mc_logo_new.png"/>
 		</div>
 	</div>
 </div> <!-- grid -->
 
+<div id="writers">
+	<div>
+		<h1>Writer #1</h1>
+		<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/Laura-MS-SMALL-e1427778683749.jpg" />
+		<p>A short bio of the writer and an explanation of what they're known for.</p>
+		<ul>
+			<li>short</li>
+			<li>list</li>
+			<li>of</li>
+			<li>articles</li>
+		</ul>
+	</div>
+	<div>
+		<h1>Writer #2</h1>
+		<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/Laura-MS-SMALL-e1427778683749.jpg" />
+		<p>A short bio of the writer and an explanation of what they're known for.</p>
+		<ul>
+			<li>short</li>
+			<li>list</li>
+			<li>of</li>
+			<li>articles</li>
+		</ul>
+	</div>
+	<div>
+		<h1>Writer #3</h1>
+		<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/Laura-MS-SMALL-e1427778683749.jpg" />
+		<p>A short bio of the writer and an explanation of what they're known for.</p>
+		<ul>
+			<li>short</li>
+			<li>list</li>
+			<li>of</li>
+			<li>articles</li>
+		</ul>
+	</div>
+	<div>
+		<h1>Writer #4</h1>
+		<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/Laura-MS-SMALL-e1427778683749.jpg" />
+		<p>A short bio of the writer and an explanation of what they're known for.</p>
+		<ul>
+			<li>short</li>
+			<li>list</li>
+			<li>of</li>
+			<li>articles</li>
+		</ul>
+	</div>
+	<div>
+		<h1>Writer #5</h1>
+		<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/Laura-MS-SMALL-e1427778683749.jpg" />
+		<p>A short bio of the writer and an explanation of what they're known for.</p>
+		<ul>
+			<li>short</li>
+			<li>list</li>
+			<li>of</li>
+			<li>articles</li>
+		</ul>
+	</div>
+
+
+</div> <!-- writers -->
 		</section><!-- #container -->
 
 <?php get_footer(); ?>
