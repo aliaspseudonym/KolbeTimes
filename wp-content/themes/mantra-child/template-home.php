@@ -95,15 +95,21 @@ get_header(); ?>
 	<div class="column">
 		<div>
 			<div>
+				<br />
 				<h1>Category A</h1>
-				<p>A one or two sentence description of the category.</p>
+				<h2>Most Recent Article in the Category</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+				<p><a href="#">More Articles</a></p>
 			</div>
 			<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/mc_logo_new.png"/>
 		</div>
 		<div>
 			<div>
+				<br />
 				<h1>Category B</h1>
-				<p>A one or two sentence description of the category.</p>
+				<h2>Most Recent Article in the Category</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<p><a href="#">More Articles</a></p>
 			</div>
 			<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/mc_logo_new.png"/>
 		</div>
@@ -111,15 +117,21 @@ get_header(); ?>
 	<div class="column">
 		<div>
 			<div>
+				<br />
 				<h1>Category C</h1>
-				<p>A one or two sentence description of the category.</p>
+				<h2>Most Recent Article in the Category</h2>
+				<p>Lorem ipsum dolor sit amet.</p>
+				<p><a href="#">More Articles</a></p>
 			</div>
 			<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/mc_logo_new.png"/>
 		</div>
 		<div>
 			<div>
+				<br />
 				<h1> Category D</h1>
-				<p>A one or two sentence description of the category.</p>
+				<h2>Most Recent Article in the Category</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<p><a href="#">More Articles</a></p>
 			</div>
 			<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/mc_logo_new.png"/>
 		</div>
@@ -127,15 +139,21 @@ get_header(); ?>
 	<div class="column">
 		<div>
 			<div>
+				<br />
 				<h1>Category E</h1>
-				<p>A one or two sentence description of the category.</p>
+				<h2>Most Recent Article in the Category</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<p><a href="#">More Articles</a></p>
 			</div>
 			<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/mc_logo_new.png"/>
 		</div>
 		<div>
 			<div>
+				<br />
 				<h1>Category F</h1>
-				<p>A one or two sentence description of the category.</p>
+				<h2>Most Recent Article in the Category</h2>
+				<p>Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<p><a href="#">More Articles</a></p>
 			</div>
 			<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/mc_logo_new.png"/>
 		</div>
@@ -143,63 +161,52 @@ get_header(); ?>
 </div> <!-- grid -->
 
 <div id="writers">
-	<div>
-		<h1>Writer #1</h1>
-		<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/Laura-MS-SMALL-e1427778683749.jpg" />
-		<p>A short bio of the writer and an explanation of what they're known for.</p>
-		<ul>
-			<li>short</li>
-			<li>list</li>
-			<li>of</li>
-			<li>articles</li>
-		</ul>
-	</div>
-	<div>
-		<h1>Writer #2</h1>
-		<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/Laura-MS-SMALL-e1427778683749.jpg" />
-		<p>A short bio of the writer and an explanation of what they're known for.</p>
-		<ul>
-			<li>short</li>
-			<li>list</li>
-			<li>of</li>
-			<li>articles</li>
-		</ul>
-	</div>
-	<div>
-		<h1>Writer #3</h1>
-		<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/Laura-MS-SMALL-e1427778683749.jpg" />
-		<p>A short bio of the writer and an explanation of what they're known for.</p>
-		<ul>
-			<li>short</li>
-			<li>list</li>
-			<li>of</li>
-			<li>articles</li>
-		</ul>
-	</div>
-	<div>
-		<h1>Writer #4</h1>
-		<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/Laura-MS-SMALL-e1427778683749.jpg" />
-		<p>A short bio of the writer and an explanation of what they're known for.</p>
-		<ul>
-			<li>short</li>
-			<li>list</li>
-			<li>of</li>
-			<li>articles</li>
-		</ul>
-	</div>
-	<div>
-		<h1>Writer #5</h1>
-		<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/Laura-MS-SMALL-e1427778683749.jpg" />
-		<p>A short bio of the writer and an explanation of what they're known for.</p>
-		<ul>
-			<li>short</li>
-			<li>list</li>
-			<li>of</li>
-			<li>articles</li>
-		</ul>
-	</div>
-
-
+	<div class="writers-column">
+		<div>
+			<h1>Writer #1</h1>
+			<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/Laura-MS-SMALL-e1427778683749.jpg" />
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<ul>
+				<li><a href="#">Article Number One</a></li>
+				<li><a href="#">Article Number Two</a></li>
+				<li><a href="#">Article Number Three</a></li>
+				<li><a href="#">Article Number Four</a></li>
+			</ul>
+		</div>
+		<div>
+			<h1>Writer #2</h1>
+			<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/Laura-MS-SMALL-e1427778683749.jpg" />
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<ul>
+				<li><a href="#">Most Recent Article Name</a></li>
+				<li><a href="#">All Work</a></li>
+			</ul>
+		</div>
+	</div> <!-- writers-column -->
+	<div class="writers-column">
+		<div>
+			<h1>Writer #3</h1>
+			<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/Laura-MS-SMALL-e1427778683749.jpg" />
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<ul>
+				<li><a href="#">Article Number One</a></li>
+				<li><a href="#">Article Number Two</a></li>
+				<li><a href="#">Article Number Three</a></li>
+				<li><a href="#">Article Number Four</a></li>
+			</ul>
+		</div>
+		<div>
+			<h1>Writer #4</h1>
+			<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/Laura-MS-SMALL-e1427778683749.jpg" />
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<ul>
+				<li><a href="#">Article Number One</a></li>
+				<li><a href="#">Article Number Two</a></li>
+				<li><a href="#">Article Number Three</a></li>
+				<li><a href="#">Article Number Four</a></li>
+			</ul>
+		</div>
+	</div> <!-- writers-column -->
 </div> <!-- writers -->
 		</section><!-- #container -->
 

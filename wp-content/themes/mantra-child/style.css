@@ -70,6 +70,19 @@ DESCRIPTION: Custom front page for Kolbe Times
 	.column {
 		width: 100% !important;
 	}
+	.writers-column {
+		clear: both;
+		min-height: 350px;
+	}
+	#writers div div { 
+		width: 47% !important;
+	}
+	#writers {
+		left: 1% !important;
+	}
+	#writers div:nth-child(2) div:first-child {
+		border-left: none !important;
+	}
 }
 
 
@@ -162,8 +175,10 @@ DESCRIPTION: Custom front page for Kolbe Times
 #grid {
 	width: 95%;
 	display: block;
-	margin: auto;
+	margin:auto;
 	padding-bottom: 20px;
+	position: relative;
+	left: 1.5%;
 }
 
 #grid img {
@@ -172,7 +187,7 @@ DESCRIPTION: Custom front page for Kolbe Times
 	max-width: 175px;
 	float: left;
 	position: relative;
-	left: 5%;
+	left: 2.5%;
 	width: 45%;
 }
 #grid  h1 {
@@ -195,15 +210,13 @@ width: 33%;
 
 #grid .column div {
 	clear: both;
-	padding-top: 20px;
-	margin-bottom: 20px;
 }
 #grid .column div:nth-child(2) {
 	border-top: 1px solid gray;
 }
 #grid .column div div {
 	clear: none;
-	padding: none;
+	padding-right: 2.5%;
 	margin: none;
 	float: right;
 	border: none;
@@ -216,13 +229,14 @@ width: 33%;
 	width: 100%;
 	display: block;
 	position: relative;
+	left: 1.5%;
 }
 
-#writers div {
+#writers div div {
 	margin-top: 20px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 19%;
+	width: 24%;
 	float: left;
 	border-left: 2px solid gray;
 }
@@ -242,13 +256,15 @@ width: 33%;
 #writers p {
 	width: 90%;
 	margin: auto;
+	text-align: center;
 }
 
 #writers ul {
-	width: 90%;
+	width: 80%;
 	margin: auto;
-	text-align: center;
 }
 #writers li {
-	display: inline;
+}
+#writers div:first-child div:first-child {
+	border-left: none;
 }
