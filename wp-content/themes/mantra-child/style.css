@@ -88,10 +88,9 @@ DESCRIPTION: Custom front page for Kolbe Times
 
 
 
-.entry-title {
+.noshow {
 	display: none;
 }
-
 
 #cycler { 
 	border: 5px solid black;
