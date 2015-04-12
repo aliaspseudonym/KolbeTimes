@@ -25,7 +25,7 @@ get_header(); ?>
 						<?php the_content(); ?>
 						<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'mantra' ), 'after' => '</div>' ) ); ?>
 						<?php edit_post_link( __( 'Edit', 'mantra' ), '<span class="edit-link">', '</span>' ); ?>
-						<p>test</p>
+	
 					</div><!-- entry-content -->
 				</div><!-- #post-## -->
 
@@ -44,38 +44,38 @@ get_header(); ?>
 	data-cycle-pause-on-hover="true"
     >
 	<div>
-		<a class="link" href="http://localhost/kolbetimes/857/">
-			<img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Jody-and-LaurieCROP4-2.jpg"/>
+		<a class="link" href="<?php echo home_url('/'); ?>857/">
+			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/03/Jody-and-LaurieCROP4-2.jpg"/>
 		</a>
 	</div>
 	<div>
-		<a class="link" href="http://localhost/kolbetimes/calgary-dream-centre-a-focus-on-compassion/">
-			<img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Dream-Centre-article_no-caption-2.jpg"/>
+		<a class="link" href="<?php echo home_url('/'); ?>calgary-dream-centre-a-focus-on-compassion/">
+			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/03/Dream-Centre-article_no-caption-2.jpg"/>
 		</a>
 	</div>
 	<div>
-		<a class="link" href="http://localhost/kolbetimes/corps-bara-youth-dance-company-mercy/">
-			<img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Youth-Company_signsSMALL-2.jpg"/>
+		<a class="link" href="<?php echo home_url('/'); ?>corps-bara-youth-dance-company-mercy/">
+			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/03/Youth-Company_signsSMALL-2.jpg"/>
 		</a>
 	</div>
 	<div>
-		<a class="link" href="http://localhost/kolbetimes/once-you-know-the-spirit-of-mercy-in-rwanda/">
-			<img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Students-modeling-their-outfits-2.jpeg"/>
+		<a class="link" href="<?php echo home_url('/'); ?>once-you-know-the-spirit-of-mercy-in-rwanda/">
+			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/03/Students-modeling-their-outfits-2.jpeg"/>
 		</a>
 	</div>
 		<div>
-		<a class="link" href="http://localhost/kolbetimes/857/">
-			<img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Jody-and-LaurieCROP4-2.jpg"/>
+		<a class="link" href="<?php echo home_url('/'); ?>857/">
+			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/03/Jody-and-LaurieCROP4-2.jpg"/>
 		</a>
 	</div>
 </div> <!-- cycle-slideshow -->
 <ul>
 	<div id=adv-custom-pager>
-		<li><a href="#"><img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Jody-and-LaurieCROP4-2.jpg"/></a></li>
-		<li><a href="#"><img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Dream-Centre-article_no-caption-2.jpg"/></a></li>
-		<li><a href="#"><img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Youth-Company_signsSMALL-2.jpg"/></a></li>
-		<li><a href="#"><img src='http://localhost/kolbetimes/wp-content/uploads/2015/03/Students-modeling-their-outfits-2.jpeg'/></a></li>
-		<li><a href="#"><img src="http://localhost/kolbetimes/wp-content/uploads/2015/03/Jody-and-LaurieCROP4-2.jpg"/></a></li>
+		<li><a href="#"><img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/03/Jody-and-LaurieCROP4-2.jpg"/></a></li>
+		<li><a href="#"><img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/03/Dream-Centre-article_no-caption-2.jpg"/></a></li>
+		<li><a href="#"><img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/03/Youth-Company_signsSMALL-2.jpg"/></a></li>
+		<li><a href="#"><img src='<?php echo home_url('/'); ?>wp-content/uploads/2015/03/Students-modeling-their-outfits-2.jpeg'/></a></li>
+		<li><a href="#"><img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/03/Jody-and-LaurieCROP4-2.jpg"/></a></li>
 	</div> <!-- adv-custom-pager -->
 </ul>
 </div> <!--cycler-->
@@ -105,7 +105,7 @@ get_header(); ?>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
 				<p><a href="#">More Articles</a></p>
 			</div>
-			<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/mc_logo_new.png"/>
+			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2014/11/mc_logo_new.png"/>
 		</div>
 		<div>
 			<div>
@@ -115,7 +115,7 @@ get_header(); ?>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				<p><a href="#">More Articles</a></p>
 			</div>
-			<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/mc_logo_new.png"/>
+			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2014/11/mc_logo_new.png"/>
 		</div>
 	</div>
 	<div class="column">
@@ -127,7 +127,7 @@ get_header(); ?>
 				<p>Lorem ipsum dolor sit amet.</p>
 				<p><a href="#">More Articles</a></p>
 			</div>
-			<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/mc_logo_new.png"/>
+			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2014/11/mc_logo_new.png"/>
 		</div>
 		<div>
 			<div>
@@ -137,7 +137,7 @@ get_header(); ?>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 				<p><a href="#">More Articles</a></p>
 			</div>
-			<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/mc_logo_new.png"/>
+			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2014/11/mc_logo_new.png"/>
 		</div>
 	</div>
 	<div class="column">
@@ -149,7 +149,7 @@ get_header(); ?>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				<p><a href="#">More Articles</a></p>
 			</div>
-			<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/mc_logo_new.png"/>
+			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2014/11/mc_logo_new.png"/>
 		</div>
 		<div>
 			<div>
@@ -159,7 +159,7 @@ get_header(); ?>
 				<p>Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				<p><a href="#">More Articles</a></p>
 			</div>
-			<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/mc_logo_new.png"/>
+			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2014/11/mc_logo_new.png"/>
 		</div>
 	</div>
 </div> <!-- grid -->
@@ -168,7 +168,7 @@ get_header(); ?>
 	<div class="writers-column">
 		<div>
 			<h1>Writer #1</h1>
-			<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/Laura-MS-SMALL-e1427778683749.jpg" />
+			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2014/11/Laura-MS-SMALL-e1427778683749.jpg" />
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 			<ul>
 				<li><a href="#">Article Number One</a></li>
@@ -179,7 +179,7 @@ get_header(); ?>
 		</div>
 		<div>
 			<h1>Writer #2</h1>
-			<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/Laura-MS-SMALL-e1427778683749.jpg" />
+			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2014/11/Laura-MS-SMALL-e1427778683749.jpg" />
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 			<ul>
 				<li><a href="#">Most Recent Article Name</a></li>
@@ -190,7 +190,7 @@ get_header(); ?>
 	<div class="writers-column">
 		<div>
 			<h1>Writer #3</h1>
-			<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/Laura-MS-SMALL-e1427778683749.jpg" />
+			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2014/11/Laura-MS-SMALL-e1427778683749.jpg" />
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 			<ul>
 				<li><a href="#">Article Number One</a></li>
@@ -201,7 +201,7 @@ get_header(); ?>
 		</div>
 		<div>
 			<h1>Writer #4</h1>
-			<img src="http://localhost/kolbetimes/wp-content/uploads/2014/11/Laura-MS-SMALL-e1427778683749.jpg" />
+			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2014/11/Laura-MS-SMALL-e1427778683749.jpg" />
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 			<ul>
 				<li><a href="#">Article Number One</a></li>

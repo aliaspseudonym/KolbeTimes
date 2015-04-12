@@ -12,6 +12,7 @@ Template Name: Custom Category Page
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<h1 class="entry-title"><?php the_title(); ?></h1>
 			<div class="entry-content">
+				<?php  ?>
 				<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'mantra' ), 'after' => '</div>' ) ); ?>
 				<?php edit_post_link( __( 'Edit', 'mantra' ), '<span class="edit-link">', '</span>' ); ?>
 			</div>
@@ -49,4 +50,3 @@ Template Name: Custom Category Page
 </section><!-- #container -->
 
 <?php get_footer(); ?>
-
