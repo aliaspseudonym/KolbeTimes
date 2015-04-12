@@ -309,10 +309,3 @@ width: 33%;
 .entry-title-mobile {
 
 }
-.bg-content {
-	min-height: 200px;
-	border: 2px solid gray;
-	display: block;
-	min-height: 350 px;
-	background-color: #c26128;
-}

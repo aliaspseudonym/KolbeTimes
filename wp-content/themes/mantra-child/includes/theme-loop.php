@@ -45,6 +45,7 @@ function mantra_auto_excerpt_more( $more ) {
 	global $mantra_excerptdots;
 	return $mantra_excerptdots. mantra_continue_reading_link();
 }
+
 add_filter( 'excerpt_more', 'mantra_auto_excerpt_more' );
 
 
