@@ -83,8 +83,24 @@ DESCRIPTION: Custom front page for Kolbe Times
 	#writers div:nth-child(2) div:first-child {
 		border-left: none !important;
 	}
+	.feat-image {
+		float: none !important;
+		width: 80% !important;
+		margin: auto;
+	}
+	.category-excerpt .entry-title {
+		display: none !important;
+	}
+	.category-excerpt {
+		width: 100% !important;
+	}
+	.mobile-only {
+		display: inline !important;
+	}
 }
-
+.mobile-only {
+	display: none;
+}
 
 
 
@@ -105,7 +121,7 @@ DESCRIPTION: Custom front page for Kolbe Times
 	box-shadow: 3px 3px 2px grey;
 }
 
-
+/* custom home page */
 .cycle-slideshow div { 
     position: absolute; top: 0; left: 0;
     width: 100%; padding: 0; display: block;
@@ -266,4 +282,37 @@ width: 33%;
 }
 #writers div:first-child div:first-child {
 	border-left: none;
+}
+
+/* custom category page */
+
+.feat-image {
+	float: left;
+	width: 25%;
+}
+
+
+.category-excerpt {
+	float: left;
+	width: 73%;
+	margin-left: 1%;
+}
+.category-excerpt a {
+	
+}
+
+.entry-title {
+	-moz-text-shadow: 0px 0px;
+	-webkit-text-shadow: 0px 0px;
+	text-shadow: 0px 0px;
+}
+.entry-title-mobile {
+
+}
+.bg-content {
+	min-height: 200px;
+	border: 2px solid gray;
+	display: block;
+	min-height: 350 px;
+	background-color: #c26128;
 }

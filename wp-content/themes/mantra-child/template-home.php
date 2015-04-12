@@ -25,7 +25,8 @@ get_header(); ?>
 						<?php the_content(); ?>
 						<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'mantra' ), 'after' => '</div>' ) ); ?>
 						<?php edit_post_link( __( 'Edit', 'mantra' ), '<span class="edit-link">', '</span>' ); ?>
-					</div><!-- .entry-content -->
+						<p>test</p>
+					</div><!-- entry-content -->
 				</div><!-- #post-## -->
 
 				<?php comments_template( '', true ); ?>
