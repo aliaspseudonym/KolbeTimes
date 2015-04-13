@@ -16,7 +16,8 @@ Template Name: Custom Category Page
 					<?php the_post_thumbnail('medium'); ?>
 				</div>
 				<div class="category-excerpt">
-					<h1 class="entry-title"><?php the_title(); ?></h1>
+					<br />
+					<a href="<?php the_permalink(); ?>"<h1 class="entry-title"><?php the_title(); ?></h1></a>
 					<?php the_excerpt(); ?>
 					<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'mantra' ), 'after' => '</div>' ) ); ?>
 					<?php edit_post_link( __( 'Edit', 'mantra' ), '<span class="edit-link">', '</span>' ); ?>

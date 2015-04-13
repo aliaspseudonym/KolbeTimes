@@ -301,10 +301,8 @@ width: 33%;
 	
 }
 
-.entry-title {
-	-moz-text-shadow: 0px 0px;
-	-webkit-text-shadow: 0px 0px;
-	text-shadow: 0px 0px;
+#content .entry-title {
+	font-size: 25px;
 }
 .entry-title-mobile {
 
