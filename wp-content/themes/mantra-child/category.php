@@ -16,9 +16,16 @@ Template Name: Custom Category Page
 					<?php the_post_thumbnail('medium'); ?>
 				</div>
 				<div class="category-excerpt">
-					<br />
-					<a href="<?php the_permalink(); ?>"<h1 class="entry-title"><?php the_title(); ?></h1></a>
+					<a href="<?php the_permalink(); ?>"><h1 class="entry-title"><?php the_title(); ?></h1></a>
+					<span>By 
+						<?php 
+							if (get_the_author_posts() == 1) {
+								the_author(); ?>. <?php the_tags(); ?></span>
+							<?php } else { 
+								the_author_posts_link(); ?>. <?php the_tags(); ?></span>
+						<?php } ?>
 					<?php the_excerpt(); ?>
+
 					<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'mantra' ), 'after' => '</div>' ) ); ?>
 					<?php edit_post_link( __( 'Edit', 'mantra' ), '<span class="edit-link">', '</span>' ); ?>
 				</div>

@@ -297,7 +297,8 @@ width: 33%;
 	width: 73%;
 	margin-left: 1%;
 }
-.category-excerpt a {
+.category-excerpt p {
+	padding-top: 0px;
 	
 }
 
