@@ -110,6 +110,7 @@ DESCRIPTION: Custom front page for Kolbe Times
 	.entry-content div, img {
 	display: block !important;
 	float: none !important;
+
 	}
 }
 .mobile-only {

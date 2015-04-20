@@ -42,8 +42,18 @@ get_header(); ?>
 							<h2><?php printf( esc_attr__( 'About %s', 'mantra' ), get_the_author() ); ?></h2>
 							<?php the_author_meta( 'description' ); ?>
 							<div id="author-link">
-								<a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
-									<?php printf( __( 'View all posts by ','mantra').'%s <span class="meta-nav">&rarr;</span>', get_the_author() ); ?>
+								<?php if (get_the_author_posts() > 1) { // if a user has only one post, don't link to their all posts page.?>
+									<a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
+								
+									<?php echo "View all posts by " . get_the_author(); ?>
+								<?php }
+								if (get_the_author_posts() > 1 and get_the_author_meta('user_url')) { ?>
+									</a><span> | </span>
+								<?php }
+						
+								if (get_the_author_meta('user_url')) { // if the user webpage link is filled out, display it. ?>
+									<a href="<?php echo get_the_author_meta('user_url'); ?>"><?php echo "Visit " . get_the_author_meta(user_url); ?></a>
+								<?php } ?>
 								</a>
 							</div><!-- #author-link	-->
 						</div><!-- #author-description -->

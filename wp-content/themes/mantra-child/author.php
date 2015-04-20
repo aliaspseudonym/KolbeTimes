@@ -47,7 +47,7 @@ get_header(); ?>
 						<?php echo get_avatar( get_the_author_meta( 'user_email' ), 125); ?>
 					</div><!-- #author-avatar -->
 					<div id="author-description">
-						<h2><?php printf( __( 'All posts by %s', 'mantra' ), get_the_author() ); ?></h2>
+						<h2><?php printf( __( '%s', 'mantra' ), get_the_author() ); ?></h2>
 						<?php the_author_meta( 'description' ); ?>
 					</div><!-- #author-description	-->
 				</div><!-- #entry-author-info -->
@@ -56,22 +56,14 @@ get_header(); ?>
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
-			<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<span class="mobile-only"><h1 class="entry-title"><?php the_title(); ?></h1></span>
-			<div class="entry-content">
-				<div class="feat-image">
-					<?php the_post_thumbnail('medium'); ?>
-				</div>
-				<div class="category-excerpt">
-					<a href="<?php the_permalink(); ?>"><h1 class="entry-title"><?php the_title(); ?></h1></a>
-					<span><?php the_tags(); ?></span>
-					<?php the_excerpt(); ?>
-					<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'mantra' ), 'after' => '</div>' ) ); ?>
-					<?php edit_post_link( __( 'Edit', 'mantra' ), '<span class="edit-link">', '</span>' ); ?>
-				</div>
-			</div> <!-- entry-content -->
-			<div style="clear: both;"></div>
-		</div>
+					<?php
+						/* Include the Post-Format-specific template for the content.
+						 * If you want to overload this in a child theme then include a file
+						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+						 */
+						get_template_part( 'content', get_post_format() );
+					?>
+
 				<?php endwhile; ?>
 
 				<?php if($mantra_pagination=="Enable") mantra_pagination(); else mantra_content_nav( 'nav-below' ); ?>
