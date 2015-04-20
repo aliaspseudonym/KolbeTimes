@@ -44,10 +44,10 @@ get_header(); ?>
 				if ( get_the_author_meta( 'description' ) ) : ?>
 				<div id="author-info">
 					<div id="author-avatar">
-						<?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'mantra_author_bio_avatar_size', 60 ) ); ?>
+						<?php echo get_avatar( get_the_author_meta( 'user_email' ), 125); ?>
 					</div><!-- #author-avatar -->
 					<div id="author-description">
-						<h2><?php printf( __( 'About %s', 'mantra' ), get_the_author() ); ?></h2>
+						<h2><?php printf( __( 'All posts by %s', 'mantra' ), get_the_author() ); ?></h2>
 						<?php the_author_meta( 'description' ); ?>
 					</div><!-- #author-description	-->
 				</div><!-- #entry-author-info -->

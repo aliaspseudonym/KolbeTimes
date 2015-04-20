@@ -10,7 +10,7 @@ Template Name: Custom Category Page
 
 	 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<span class="mobile-only"><h1 class="entry-title"><?php the_title(); ?></h1></span>
+			<span class="mobile-only"><a href="<?php the_permalink(); ?>"><h1 class="entry-title"></a><?php the_title(); ?></h1></span>
 			<div class="entry-content">
 				<div class="feat-image">
 					<?php the_post_thumbnail('medium'); ?>
