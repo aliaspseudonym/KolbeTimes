@@ -56,10 +56,15 @@ DESCRIPTION: Custom front page for Kolbe Times
 		width: auto;
 		clear: both;
 		border-left: none !important;
+		min-height: 190px !important;
 	}
 	#grid div div {	
 		border-top: none !important;
 		border-bottom: 2px solid gray;
+	}
+	#grid img {
+		margin-top: 2px !important;
+		margin-bottom: 2px !important;
 	}
 	.column {
 		width: 100% !important;
@@ -107,10 +112,13 @@ DESCRIPTION: Custom front page for Kolbe Times
 		width: 100% !important;
 		margin-left: 0%;
 	}
-	.entry-content div, img {
+	.entry-content div {
 	display: block !important;
 	float: none !important;
-
+	}
+	.entry-content img {
+	display: block !important;
+	float: none !important;
 	}
 }
 .mobile-only {
@@ -210,15 +218,19 @@ DESCRIPTION: Custom front page for Kolbe Times
 	position: relative;
 	left: 1.5%;
 }
-
+#grid div {
+	min-height: 163px;
+}
 #grid img {
-	display: inline;
+	display: block;
 	max-height: 175px;
 	max-width: 175px;
 	float: left;
 	position: relative;
 	left: 2.5%;
-	width: 45%;
+	top: 5px;
+	width: 40%;
+	margin: 2px 2px 2px 2px;
 }
 #grid  h1 {
 	font-weight: bold;

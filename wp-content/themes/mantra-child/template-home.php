@@ -100,66 +100,67 @@ get_header(); ?>
 		<div>
 			<div>
 				<br />
-				<h1>Category A</h1>
-				<h2>Most Recent Article in the Category</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-				<p><a href="#">More Articles</a></p>
+				<h1>Book Reviews</h1>
+				<h2>Books that Changed My Life</h2>
+				<p>Dr. Gordon Smith discusses a series of books which had a formative impact on his life.</p>
+				<p><a href="#">All Book Reviews</a></p>
 			</div>
-			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2014/11/mc_logo_new.png"/>
+			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/04/books.jpg"/>
 		</div>
 		<div>
 			<div>
 				<br />
-				<h1>Category B</h1>
-				<h2>Most Recent Article in the Category</h2>
+				<h1>Featured Artist</h1>
+				<h2>Rob Hudec</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				<p><a href="#">More Articles</a></p>
+				<p><a href="#">All Featured Artists</a></p>
 			</div>
-			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2014/11/mc_logo_new.png"/>
+			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/04/The-Narrow-Road-cover_3.jpg"/>
 		</div>
 	</div>
 	<div class="column">
 		<div>
 			<div>
 				<br />
-				<h1>Category C</h1>
-				<h2>Most Recent Article in the Category</h2>
-				<p>Lorem ipsum dolor sit amet.</p>
-				<p><a href="#">More Articles</a></p>
+				<h1>Poetry</h1>
+				<h2>Valentine for Ernest Mann</h2>
+				<p>You can’t order a poem like you order a taco. / Walk up to the counter, say, “I’ll take two”
+				</p>
+				<p><a href="#">All Poetry</a></p>
 			</div>
 			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2014/11/mc_logo_new.png"/>
 		</div>
 		<div>
 			<div>
 				<br />
-				<h1> Category D</h1>
-				<h2>Most Recent Article in the Category</h2>
+				<h1>Film Reviews</h1>
+				<h2>Letters to Father Jacob</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				<p><a href="#">More Articles</a></p>
+				<p><a href="#">All Film Reviews</a></p>
 			</div>
-			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2014/11/mc_logo_new.png"/>
+			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/04/Letters-to-Father-Jacob-COVER-CROP.jpg"/>
 		</div>
 	</div>
 	<div class="column">
 		<div>
 			<div>
 				<br />
-				<h1>Category E</h1>
-				<h2>Most Recent Article in the Category</h2>
+				<h1>Editorials</h1>
+				<h2>Musings from the Editor's Desk</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				<p><a href="#">More Articles</a></p>
+				<p><a href="#">All Editorials</a></p>
 			</div>
-			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2014/11/mc_logo_new.png"/>
+			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/04/words.jpg"/>
 		</div>
 		<div>
 			<div>
 				<br />
-				<h1>Category F</h1>
-				<h2>Most Recent Article in the Category</h2>
+				<h1>Theatre</h1>
+				<h2>Miracle Worker</h2>
 				<p>Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				<p><a href="#">More Articles</a></p>
+				<p><a href="#">All Theatre Articles</a></p>
 			</div>
-			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2014/11/mc_logo_new.png"/>
+			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/04/Miracle-Worker-image.jpg"/>
 		</div>
 	</div>
 </div> <!-- grid -->

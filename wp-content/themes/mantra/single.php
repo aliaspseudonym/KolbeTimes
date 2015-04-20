@@ -52,7 +52,7 @@ get_header(); ?>
 								<?php }
 						
 								if (get_the_author_meta('user_url')) { // if the user webpage link is filled out, display it. ?>
-									<a href="<?php echo get_the_author_meta('user_url'); ?>"><?php echo "Visit " . get_the_author_meta(user_url); ?></a>
+									<a href="<?php echo get_the_author_meta('user_url'); ?>"><?php echo "Visit " . trim(get_the_author_meta('user_url'), 'http://'); ?></a>
 								<?php } ?>
 								</a>
 							</div><!-- #author-link	-->
