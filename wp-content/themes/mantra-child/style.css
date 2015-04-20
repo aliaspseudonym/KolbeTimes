@@ -51,13 +51,7 @@ DESCRIPTION: Custom front page for Kolbe Times
 	#quote p {
 		font-size: medium !important;
 	}
-}
-
-@media (max-width: 650px) {
-	#cycler {
-		width: 100%;
-	}
-	#grid div {
+		#grid div {
 		float: none;
 		width: auto;
 		clear: both;
@@ -69,6 +63,12 @@ DESCRIPTION: Custom front page for Kolbe Times
 	}
 	.column {
 		width: 100% !important;
+	}
+}
+
+@media (max-width: 650px) {
+	#cycler {
+		width: 100%;
 	}
 	.writers-column {
 		clear: both;
@@ -143,7 +143,7 @@ DESCRIPTION: Custom front page for Kolbe Times
 
 .cycle-slideshow {
 	position: relative;
-	width: 83.5%;
+	width: 83.6%;
 	border-right: 5px black;
 }
 
@@ -152,7 +152,7 @@ DESCRIPTION: Custom front page for Kolbe Times
 	padding: none;
 	top: 0;
 	right: 0;
-	width: 16%;
+	width: 15.675%;
 }
 #adv-custom-pager a img {
 	padding: none;
@@ -339,10 +339,14 @@ width: 33%;
 }
 #author-avatar img {
 	width: 150 px !important;
-
+	display: block;
 }
-
-#author-description h2 {
-
+#author-info {
+	min-height: 150px;
+}
+#author-info h2 {
+	font-size: 32px;
+	line-height: 32px;
+	
 }
 
