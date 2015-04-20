@@ -15,6 +15,14 @@ foreach ($options as $key => $value) {
 ?><?php cryout_before_article_hook(); ?>
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<?php if ( is_archive() || is_search() ) { /*custom formatting for archive and search pages */ 
+		?>
+		<div class="entry-thumbnail">
+			<?php the_post_thumbnail('medium'); ?>
+		</div>
+		<div class="entry-container">
+	<?php 
+	}?>
 		<header class="entry-header">	
 				<hgroup>
 					<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'mantra' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
@@ -39,9 +47,9 @@ foreach ($options as $key => $value) {
 			
 						<?php if ($mantra_excerptarchive != "Full Post" ){ ?>
 						<div class="entry-summary">
-						<?php mantra_set_featured_thumb(); ?>
 						<?php the_excerpt(); ?>
 						</div><!-- .entry-summary -->
+					</div> <!-- .entry-container --> 
 						<?php } else { ?>
 						<div class="entry-content">
 						<?php mantra_set_featured_thumb(); ?>
