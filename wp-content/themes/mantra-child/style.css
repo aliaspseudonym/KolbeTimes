@@ -107,6 +107,10 @@ DESCRIPTION: Custom front page for Kolbe Times
 		width: 100% !important;
 		margin-left: 0%;
 	}
+	.entry-content div, img {
+	display: block !important;
+	float: none !important;
+	}
 }
 .mobile-only {
 	display: none;
