@@ -45,37 +45,37 @@ get_header(); ?>
     >
 	<div>
 		<a class="link" href="<?php echo home_url('/'); ?>857/">
-			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/03/Jody-and-LaurieCROP4-2.jpg"/>
+			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/04/I-Am-Immigrant-SLIDER.jpg"/>
 		</a>
 	</div>
 	<div>
 		<a class="link" href="<?php echo home_url('/'); ?>calgary-dream-centre-a-focus-on-compassion/">
-			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/03/Dream-Centre-article_no-caption-2.jpg"/>
+			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/04/Language-of-Grief-SLIDER.jpg"/>
 		</a>
 	</div>
 	<div>
 		<a class="link" href="<?php echo home_url('/'); ?>corps-bara-youth-dance-company-mercy/">
-			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/03/Youth-Company_signsSMALL-2.jpg"/>
+			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/04/Journey-Through-Dementia-SLIDER.jpg"/>
 		</a>
 	</div>
 	<div>
 		<a class="link" href="<?php echo home_url('/'); ?>once-you-know-the-spirit-of-mercy-in-rwanda/">
-			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/03/Students-modeling-their-outfits-2.jpeg"/>
+			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/04/Why-Words-Matter-SLIDER.jpg"/>
 		</a>
 	</div>
 		<div>
 		<a class="link" href="<?php echo home_url('/'); ?>857/">
-			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/03/Jody-and-LaurieCROP4-2.jpg"/>
+			<img src="<?php echo home_url('/'); ?>/wp-content/uploads/2015/04/Words-of-Healing-SLIDER.jpg"/>
 		</a>
 	</div>
 </div> <!-- cycle-slideshow -->
 <ul>
 	<div id=adv-custom-pager>
-		<li><a href="#"><img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/03/Jody-and-LaurieCROP4-2.jpg"/></a></li>
-		<li><a href="#"><img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/03/Dream-Centre-article_no-caption-2.jpg"/></a></li>
-		<li><a href="#"><img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/03/Youth-Company_signsSMALL-2.jpg"/></a></li>
-		<li><a href="#"><img src='<?php echo home_url('/'); ?>wp-content/uploads/2015/03/Students-modeling-their-outfits-2.jpeg'/></a></li>
-		<li><a href="#"><img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/03/Jody-and-LaurieCROP4-2.jpg"/></a></li>
+		<li><a href="#"><img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/04/I-Am-Immigrant-SLIDER-THUMB.jpg"/></a></li>
+		<li><a href="#"><img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/04/Language-of-Grief-SLIDER-THUMB.jpg"/></a></li>
+		<li><a href="#"><img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/04/Journey-Through-Dementia-SLIDER-THUMB.jpg"/></a></li>
+		<li><a href="#"><img src='<?php echo home_url('/'); ?>wp-content/uploads/2015/04/Why-Words-Matter-SLIDER-THUMB.jpg'/></a></li>
+		<li><a href="#"><img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/04/Words-of-Healing-SLIDER-THUMB.jpg"/></a></li>
 	</div> <!-- adv-custom-pager -->
 </ul>
 </div> <!--cycler-->
@@ -103,7 +103,7 @@ get_header(); ?>
 				<h1>Book Reviews</h1>
 				<h2>Books that Changed My Life</h2>
 				<p>Dr. Gordon Smith discusses a series of books which had a formative impact on his life.</p>
-				<p><a href="#">All Book Reviews</a></p>
+				<p><a href="<?php echo home_url('/'); ?>category/written-word/book-reviews/">All Book Reviews</a></p>
 			</div>
 			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/04/books.jpg"/>
 		</div>
@@ -113,7 +113,7 @@ get_header(); ?>
 				<h1>Featured Artist</h1>
 				<h2>Rob Hudec</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				<p><a href="#">All Featured Artists</a></p>
+				<p><a href="<?php echo home_url('/'); ?>category/featured-artist/">All Featured Artists</a></p>
 			</div>
 			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/04/The-Narrow-Road-cover_3.jpg"/>
 		</div>
@@ -126,7 +126,7 @@ get_header(); ?>
 				<h2>Valentine for Ernest Mann</h2>
 				<p>You can’t order a poem like you order a taco. / Walk up to the counter, say, “I’ll take two”
 				</p>
-				<p><a href="#">All Poetry</a></p>
+				<p><a href="<?php echo home_url('/'); ?>category/written-word/poetry/">All Poetry</a></p>
 			</div>
 			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2014/11/mc_logo_new.png"/>
 		</div>
@@ -136,7 +136,7 @@ get_header(); ?>
 				<h1>Film Reviews</h1>
 				<h2>Letters to Father Jacob</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				<p><a href="#">All Film Reviews</a></p>
+				<p><a href="<?php echo home_url('/'); ?>category/film/film-reviews/">All Film Reviews</a></p>
 			</div>
 			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/04/Letters-to-Father-Jacob-COVER-CROP.jpg"/>
 		</div>
@@ -158,7 +158,7 @@ get_header(); ?>
 				<h1>Theatre</h1>
 				<h2>Miracle Worker</h2>
 				<p>Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				<p><a href="#">All Theatre Articles</a></p>
+				<p><a href="<?php echo home_url('/'); ?>category/performance-arts/theatre/">All Theatre Articles</a></p>
 			</div>
 			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/04/Miracle-Worker-image.jpg"/>
 		</div>
@@ -166,50 +166,23 @@ get_header(); ?>
 </div> <!-- grid -->
 
 <div id="writers">
-	<div class="writers-column">
+	<div class="writers-column-1">
 		<div>
-			<h1>Writer #1</h1>
-			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2014/11/Laura-MS-SMALL-e1427778683749.jpg" />
+			<h1>Gathered Wisdom</h1>
+			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/04/gathered-wisdom-thumb.jpg" />
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			<ul>
-				<li><a href="#">Article Number One</a></li>
-				<li><a href="#">Article Number Two</a></li>
-				<li><a href="#">Article Number Three</a></li>
-				<li><a href="#">Article Number Four</a></li>
-			</ul>
 		</div>
 		<div>
-			<h1>Writer #2</h1>
-			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2014/11/Laura-MS-SMALL-e1427778683749.jpg" />
+			<h1>Dialogue</h1>
+			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/04/Dialogue-thumb.jpg" />
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			<ul>
-				<li><a href="#">Most Recent Article Name</a></li>
-				<li><a href="#">All Work</a></li>
-			</ul>
 		</div>
 	</div> <!-- writers-column -->
-	<div class="writers-column">
+	<div class="writers-column-2">
 		<div>
-			<h1>Writer #3</h1>
-			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2014/11/Laura-MS-SMALL-e1427778683749.jpg" />
+			<h1>A Beautiful Synergy</h1>
+			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/04/synergy-thumb.jpg" />
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			<ul>
-				<li><a href="#">Article Number One</a></li>
-				<li><a href="#">Article Number Two</a></li>
-				<li><a href="#">Article Number Three</a></li>
-				<li><a href="#">Article Number Four</a></li>
-			</ul>
-		</div>
-		<div>
-			<h1>Writer #4</h1>
-			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2014/11/Laura-MS-SMALL-e1427778683749.jpg" />
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			<ul>
-				<li><a href="#">Article Number One</a></li>
-				<li><a href="#">Article Number Two</a></li>
-				<li><a href="#">Article Number Three</a></li>
-				<li><a href="#">Article Number Four</a></li>
-			</ul>
 		</div>
 	</div> <!-- writers-column -->
 </div> <!-- writers -->

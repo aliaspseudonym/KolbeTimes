@@ -75,12 +75,12 @@ DESCRIPTION: Custom front page for Kolbe Times
 	#cycler {
 		width: 100%;
 	}
-	.writers-column {
-		clear: both;
-		min-height: 350px;
-	}
-	#writers div div { 
+
+	.writers-column-1 div{ 
 		width: 47% !important;
+	}
+	.writers-column-2 div {
+		width: 100% !important;
 	}
 	#writers {
 		left: 1% !important;
@@ -278,7 +278,7 @@ width: 33%;
 	margin-top: 20px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 24%;
+	width: 32%;
 	float: left;
 	border-left: 2px solid gray;
 }
