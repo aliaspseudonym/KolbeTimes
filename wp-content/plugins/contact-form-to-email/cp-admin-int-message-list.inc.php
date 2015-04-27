@@ -198,8 +198,8 @@ echo paginate_links(  array(
       After those initial columns the fields (columns) must appear in the same order than in the form.</p>
    <p>Sample format for the CSV file:</p>
    <pre>
-    <span style="color:#009900;">2013-04-21 18:50:00, 192.168.1.12, john@sample.com,</span> "john@sample.com", "sample subject", "sample message text"
-    <span style="color:#009900;">2013-05-16 20:49:00, 192.168.1.24, jane.smith@sample.com,</span> "jane.smith@sample.com", "other subject", "other message"
+    <span style="color:#009900;">2015-03-21 18:50:00, 192.168.1.12, john@sample.com,</span> "john@sample.com", "sample subject", "sample message text"
+    <span style="color:#009900;">2015-04-16 20:49:00, 192.168.1.24, jane.smith@sample.com,</span> "jane.smith@sample.com", "other subject", "other message"
    </pre>
    </form>
   </div>

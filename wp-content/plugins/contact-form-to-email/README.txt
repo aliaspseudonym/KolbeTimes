@@ -3,7 +3,7 @@ Contributors: codepeople
 Donate link: http://wordpress.dwbooster.com/forms/contact-form-to-email
 Tags: contact form,contact,email,contact form database,form,contact form excel,feedback,captcha,contact form plugin,form to email,form to database,contact form builder,form to csv,wordpress contact form,csv,contact form reports,form to excel,contact form csv,drag and drop contact form,excel
 Requires at least: 3.0.5
-Tested up to: 4.1
+Tested up to: 4.2
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -150,7 +150,7 @@ The following translations are already included in the plugin:
 
 = Updates =
 
-New features has been published in the current Contact Form to Email version 1.2.1 based on the feedback received and we would like to thank you all the people that have supported the development, provided feedback and feature requests. The plugin is currently over the 100,000 downloads/installations and a new set of updates is already being prepared, any feature requests will be welcome. Thank you!
+New features has been published in the current Contact Form to Email version 1.2.1 based on the feedback received and we would like to thank you all the people that have supported the development, provided feedback and feature requests. The plugin is currently over the 105,000 downloads/installations and a new set of updates is already being prepared, any feature requests will be welcome. Thank you!
 
 = New: Form Builder =
 
@@ -451,16 +451,22 @@ When you click a field already added into the contact form builder area, you can
 * Fixed warning that appeared with PHP safe mode restrictions 
 * Sanitized GET parameters used in queries
 
+
+= 1.1.3 =
+* Sanitized parameters used in SQL queries.
+* Support for large forms.
+* Improved translations.
+* Compatible with the latest WordPress 4.2.x version
+
+Important note: If you are using the Professional version don't update via the WP dashboard but using your personal update link. Contact us if you need further information: http://wordpress.dwbooster.com/support
+
 == Upgrade Notice ==
 
 Very Important note: If you are using the Professional version don't update via the WP dashboard but using your personal update link. Contact us if you need further information: http://wordpress.dwbooster.com/support
 
-= 1.1.2 =
-* Compatible with the latest WP versions
-* Improved translation code, compatible with the latest WP versions
-* New translations
-* Auto-detection and auto-solution for captcha image issues in servers with problem with the PHP sessions configuration
-* Fixed warning that appeared with PHP safe mode restrictions 
-* Sanitized GET parameters used in queries
+= 1.1.3 =
+* Sanitized parameters used in SQL queries.
+* Support for large forms.
+* Improved translations.
 
 Important note: If you are using the Professional version don't update via the WP dashboard but using your personal update link. Contact us if you need further information: http://wordpress.dwbooster.com/support
