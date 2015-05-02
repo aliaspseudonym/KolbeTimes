@@ -614,7 +614,7 @@ class CP_ContactFormToEmail extends CP_CFTEMAIL_BaseClass {
                       'cu_emailformat' => $_POST['cu_emailformat'],
                       'fp_emailfrommethod' => $_POST['fp_emailfrommethod'],
 
-                      'vs_use_validation' => $_POST['vs_use_validation'],
+                      //'vs_use_validation' => $_POST['vs_use_validation'],
                       'vs_text_is_required' => $_POST['vs_text_is_required'],
                       'vs_text_is_email' => $_POST['vs_text_is_email'],
                       'vs_text_datemmddyyyy' => $_POST['vs_text_datemmddyyyy'],
@@ -783,7 +783,7 @@ class CP_ContactFormToEmail extends CP_CFTEMAIL_BaseClass {
         global $wpdb;
 
         $saved_item = $this->item;
-        $this->item = $formid;
+        $this->item = intval($formid);
         
         $last_sent_id = get_option('cp_cfte_last_sent_id_'.$formid, '0');
         $events = $wpdb->get_results("SELECT * FROM ".$wpdb->prefix.$this->table_messages." WHERE formid=".$formid." AND id>".$last_sent_id." ORDER BY id ASC");
