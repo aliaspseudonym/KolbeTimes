@@ -192,9 +192,10 @@ DESCRIPTION: Custom front page for Kolbe Times
 	line-height: 110%
 }
 #quote p {
-	font-style: italic;
-	font-size: large;
-	text-align: right;
+	line-height: 110%;
+	font-style: bold;
+	font-size: x-large;
+	text-align: center;
 }
 
 /* No sidebar in this version.
