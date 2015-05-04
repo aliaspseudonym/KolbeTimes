@@ -1,0 +1,309 @@
+/*
+ * Theme Name: Mantra Child
+ * Theme URI: http://www.cryoutcreations.eu/mantra
+ * Description: Mantra Child Theme
+ * Author: Cryout Creations
+ * Author URI: http://www.cryoutcreations.eu
+ * Template: mantra
+ * Version: 2.3.4
+ * License: GNU General Public License v2.0
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * Tags: black, red, blue, white, silver, light, dark, one-column, two-columns, three-columns, right-sidebar, left-sidebar, fixed-layout, fluid-layout, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, featured-image-header, featured-images, front-page-post-form, full-width-template,  microformats, post-formats, rtl-language-support,  sticky-post, theme-options, threaded-comments, translation-ready
+ * Text Domain: mantra-child
+ * Copyright (c) 2011-2013 Cryout Creations
+ * http://www.cryoutcreations.eu
+*/
+
+
+/*
+LAYOUT: Custom Front Page
+DESCRIPTION: Custom front page for Kolbe Times
+*/
+
+/* Adaptive Styles */
+
+@media (max-width: 800px) {
+	#adv-custom-pager {
+	clear: both;
+	float: none;
+	display: inline;
+	position: relative !important;
+	width: 100%
+	}
+	#adv-custom-pager a {
+		display: inline;
+		margin: auto;
+	}
+	#adv-custom-pager img {
+		display: inline;
+		width: 18.5%;
+		float: left;
+		margin-left: 1.25%;
+		margin-top: 5px;
+	}
+	.cycle-slideshow {
+		clear: both;
+		width: 100% !important;
+	}
+	#quote h1 {
+		font-size: x-large !important;
+	}
+	#quote p {
+		font-size: medium !important;
+	}
+}
+
+@media (max-width: 650px) {
+	#cycler {
+		width: 100%;
+	}
+	#grid div {
+		float: none;
+		width: auto;
+		clear: both;
+		border-left: none !important;
+	}
+	#grid div div {	
+		border-top: none !important;
+		border-bottom: 2px solid gray;
+	}
+	.column {
+		width: 100% !important;
+	}
+	.writers-column {
+		clear: both;
+		min-height: 350px;
+	}
+	#writers div div { 
+		width: 47% !important;
+	}
+	#writers {
+		left: 1% !important;
+	}
+	#writers div:nth-child(2) div:first-child {
+		border-left: none !important;
+	}
+	.feat-image {
+		float: none !important;
+		width: 80% !important;
+		margin: auto;
+	}
+	.category-excerpt .entry-title {
+		display: none !important;
+	}
+	.category-excerpt {
+		width: 100% !important;
+	}
+	.mobile-only {
+		display: inline !important;
+	}
+}
+.mobile-only {
+	display: none;
+}
+
+
+
+.noshow {
+	display: none;
+}
+
+#cycler { 
+	border: 5px solid black;
+	width: 85%;
+	min-width: 200px;
+	margin: auto; 
+	padding: 0; 
+	position: relative;
+	background-color: black;
+	margin-bottom: 10px;
+	overflow: hidden;
+	box-shadow: 3px 3px 2px grey;
+}
+
+/* custom home page */
+.cycle-slideshow div { 
+    position: absolute; top: 0; left: 0;
+    width: 100%; padding: 0; display: block;
+}
+.cycle-slideshow img{
+    position: relative; top: 0; left: 0;
+    width: 100%; padding: 0; display: block;
+}
+
+.cycle-slideshow {
+	position: relative;
+	width: 83.5%;
+	border-right: 5px black;
+}
+
+#adv-custom-pager {
+	position: absolute;
+	padding: none;
+	top: 0;
+	right: 0;
+	width: 16%;
+}
+#adv-custom-pager a img {
+	padding: none;
+
+}
+
+#cycler ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#quote {
+	width: 75%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+#quote h1 {
+	font-size: xx-large;
+	text-align: center;
+	line-height: 110%
+}
+#quote p {
+	font-style: italic;
+	font-size: large;
+	text-align: right;
+}
+
+/* No sidebar in this version.
+#sidebar  {
+	display:block;
+	float: left;
+	overflow: hidden;
+	width: 15%;
+	border-right:2px dashed #EAEAEA;
+}
+#sidebar  div {
+	border-left: none;
+}
+*/
+
+#grid {
+	width: 95%;
+	display: block;
+	margin:auto;
+	padding-bottom: 20px;
+	position: relative;
+	left: 1.5%;
+}
+
+#grid img {
+	display: inline;
+	max-height: 175px;
+	max-width: 175px;
+	float: left;
+	position: relative;
+	left: 2.5%;
+	width: 45%;
+}
+#grid  h1 {
+	font-weight: bold;
+	font-size: medium;
+	text-indent: 5%;
+}
+
+#grid .column {
+height: 200 px;
+border-left: 2px solid gray;
+position: relative;
+float: left;
+width: 33%;
+}
+
+#grid .column:first-child {
+	border: none;
+}
+
+#grid .column div {
+	clear: both;
+}
+#grid .column div:nth-child(2) {
+	border-top: 1px solid gray;
+}
+#grid .column div div {
+	clear: none;
+	padding-right: 2.5%;
+	margin: none;
+	float: right;
+	border: none;
+	display: block;
+	width: 50%;
+}
+
+#writers  {
+	margin: auto;
+	width: 100%;
+	display: block;
+	position: relative;
+	left: 1.5%;
+}
+
+#writers div div {
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 24%;
+	float: left;
+	border-left: 2px solid gray;
+}
+
+#writers div img {
+	width: 80%;
+	margin: auto;
+	display: block;
+}
+
+#writers h1 {
+	font-size: large;
+	text-align: center;
+	line-height: 110%;
+	font-weight: bold;
+}
+#writers p {
+	width: 90%;
+	margin: auto;
+	text-align: center;
+}
+
+#writers ul {
+	width: 80%;
+	margin: auto;
+}
+#writers li {
+}
+#writers div:first-child div:first-child {
+	border-left: none;
+}
+
+/* custom category page */
+
+.feat-image {
+	float: left;
+	width: 25%;
+}
+
+
+.category-excerpt {
+	float: left;
+	width: 73%;
+	margin-left: 1%;
+}
+.category-excerpt a {
+	
+}
+
+#content .entry-title {
+	font-size: 25px;
+}
+.entry-title-mobile {
+
+}

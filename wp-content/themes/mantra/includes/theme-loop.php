@@ -64,7 +64,8 @@ function mantra_custom_excerpt_more( $output ) {
 	return $output;
 }
 
-add_filter( 'get_the_excerpt', 'mantra_custom_excerpt_more' );
+
+
 
 /**
  * Adds a "Continue Reading" link to post excerpts created using the <!--more--> tag.
