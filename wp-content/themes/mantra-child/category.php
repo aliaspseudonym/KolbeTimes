@@ -43,6 +43,7 @@ get_header(); ?>
 				<?php endwhile; ?>
 
 					<?php if($mantra_pagination=="Enable") mantra_pagination(); else mantra_content_nav( 'nav-below' ); ?>
+
 			<?php else : ?>
 
 				<article id="post-0" class="post no-results not-found">
