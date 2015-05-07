@@ -86,7 +86,7 @@ get_header(); ?>
 			
 
 <div id="quote">
-	<h1>Tell us about one of your favourite books, and why it made an impact. We’d love to share your picks with our readers!</h1>
+	<h1>Tell us about one of your favourite books, and why it impressed you. We’d love to share your book picks with our readers.</h1>
 	<a href="<?php echo home_url('/'); ?>submissions/"><p>Click here to submit!</p></a>
 </div> <!-- #quote -->
 
@@ -144,12 +144,12 @@ get_header(); ?>
 		<div>
 			<div>
 				<br />
-				<h1>Editorials</h1>
-				<h2>Musings from the Editor's Desk</h2>
+				<<h1>Editorials</h1>
+				<a href="<?php echo home_url('/'); ?>musings-from-the-editors-desk"><h2>Musings from the Editor's Desk</h2></a>
 				<p>Which words stick in our minds, and why? This issue of Kolbe Times explores the power of words.</p>
-				<p><a href="#">All Editorials</a></p>
+				<p><a href="<?php echo home_url('/'); ?>category/editorials">All Editorials</a></p>
 			</div>
-			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/04/words.jpg"/>
+			<a href="<?php echo home_url('/'); ?>musings-from-the-editors-desk"><img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/04/words.jpg"/></a>
 		</div>
 		<div>
 			<div>
@@ -159,7 +159,7 @@ get_header(); ?>
 				<p>Deacon Adrian Martens reflects on the nature of true dialogue, which opens new doors while honouring parameters.</p>
 				<p><a href="<?php echo home_url('/'); ?>category/guest-columnists/">All Guest Columnists</a></p>
 			</div>
-			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/05/GuestColumnistThumb.jpg"/>
+			<a href="<?php echo home_url('/'); ?>dialogue-true-openness-steadfast-convictions/"><img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/05/GuestColumnistThumb.jpg"/></a>
 		</div>
 	</div>
 </div> <!-- grid -->
@@ -174,13 +174,13 @@ get_header(); ?>
 		<div>
 			<a href="<?php echo home_url('/'); ?>theatre-review-miracle-worker/"><h1>Miracle Worker</h1>
 			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/04/MiracleWorkerThumb.jpg" /></a>
-			<p>Meghan Konditi reviews Rosebud’s production of how Helen Keller was freed from her dark, silent world as a deaf and mute young girl.</p>
+			<p>Meg Konditi reviews Rosebud Theatre’s poignant play that portrays how Helen Keller was freed from her dark, silent world. </p>
 		</div>
 	</div> <!-- writers-column -->
 	<div class="writers-column-2">
 		<div>
 			<a href="<?php echo home_url('/'); ?>a-beautiful-synergy/"><h1>A Beautiful Synergy</h1>
-			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/04/synergy-thumb.jpg" /></a>
+			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/05/synergythumb.jpg" /></a>
 			<p>Renate and Keith Worthington are a talented couple who combine language and art…with fun, flair and grace.</p>
 		</div>
 	</div> <!-- writers-column -->
