@@ -144,7 +144,7 @@ get_header(); ?>
 		<div>
 			<div>
 				<br />
-				<<h1>Editorials</h1>
+				<h1>Editorials</h1>
 				<a href="<?php echo home_url('/'); ?>musings-from-the-editors-desk"><h2>Musings from the Editor's Desk</h2></a>
 				<p>Which words stick in our minds, and why? This issue of Kolbe Times explores the power of words.</p>
 				<p><a href="<?php echo home_url('/'); ?>category/editorials">All Editorials</a></p>
