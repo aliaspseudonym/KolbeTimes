@@ -30,4 +30,17 @@ function mycustom_scripts_method() {
 	);
 }
 
+add_action( 'wp_enqueue_scripts', 'mycustom_scripts_method' );
+
+function relativePathForUploads($fileInfos)
+{
+	global $blog_id;
+	$path = get_blog_option($blog_id,'siteurl');
+
+	$fileInfos['url'] = str_replace($path,'',$fileInfos['url']);
+
+	return $fileInfos;
+}
+add_filter('wp_handle_upload', 'relativePathForUploads');
+
 ?>
