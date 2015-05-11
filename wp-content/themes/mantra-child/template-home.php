@@ -127,7 +127,7 @@ get_header(); ?>
 				<p>A poem by poet, songwriter and novelist Naomi Shihab Nye, who brings a fresh, playful perspective to everyday life.</p>
 				<p><a href="<?php echo home_url('/'); ?>category/written-word/poetry/">All Poetry</a></p>
 			</div>
-			<a href="<?php echo home_url('/'); ?>valentine-for-ernest-mann/"><img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/05/poetrythumb.jpg"/></a>
+			<a href="<?php echo home_url('/'); ?>valentine-for-ernest-mann/"><img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/05/poetry-thumb.jpg"/></a>
 		</div>
 		<div>
 			<div>
@@ -145,11 +145,8 @@ get_header(); ?>
 			<div>
 				<br />
 				<h1>Editorials</h1>
-<<<<<<< HEAD
 				<a href="<?php echo home_url('/'); ?>musings-from-the-editors-desk"><h2>Musings from the Editor's Desk</h2></a>
-=======
 				<h2>Musings from the Editor's Desk</h2>
->>>>>>> parent of ce85c49... Homepage update
 				<p>Which words stick in our minds, and why? This issue of Kolbe Times explores the power of words.</p>
 				<p><a href="#">All Editorials</a></p>
 			</div>
