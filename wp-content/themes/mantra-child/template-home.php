@@ -149,7 +149,7 @@ get_header(); ?>
 				<p>Which words stick in our minds, and why? This issue of Kolbe Times explores the power of words.</p>
 				<p><a href="<?php echo home_url('/'); ?>category/editorials">All Editorials</a></p>
 			</div>
-			<a href="<?php echo home_url('/'); ?>musings-from-the-editors-desk"><img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/04/words.jpg"/></a>
+			<a href="<?php echo home_url('/'); ?>musings-from-the-editors-desk"><img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/05/musing.jpg"/></a>
 		</div>
 		<div>
 			<div>
@@ -174,7 +174,7 @@ get_header(); ?>
 		<div>
 			<a href="<?php echo home_url('/'); ?>theatre-review-miracle-worker/"><h1>Miracle Worker</h1>
 			<img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/04/MiracleWorkerThumb.jpg" /></a>
-			<p>Meg Konditi reviews Rosebud Theatre’s poignant play that portrays how Helen Keller was freed from her dark, silent world. </p>
+			<p>Meg Konditi reviews Rosebud Theatre’s poignant play about the life of Helen Keller. </p>
 		</div>
 	</div> <!-- writers-column -->
 	<div class="writers-column-2">
