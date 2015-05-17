@@ -120,6 +120,20 @@ DESCRIPTION: Custom front page for Kolbe Times
 	display: block !important;
 	float: none !important;
 	}
+	#entry-author-info #author-avatar {
+	clear: both !important;
+	width: 100% !important;
+	height: 150px !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+#entry-author-info #author-description {
+	float: none !important;
+	clear: both !important;
+	padding-left: none !important;
+	width: 100% !important;
+	margin: 0 0 0 0 !important;
+}
 }
 .mobile-only {
 	display: none;
@@ -367,16 +381,17 @@ width: 33%;
 	background: #fff;
 	border: none;
 	float: left;
-	height: 300 px;
+	height: auto;
 	margin: 0 -104px 0 0;
 	padding-top: 0 px;
 	-moz-box-shadow:none;
 	-webkit-box-shadow: none;
 	box-shadow: none;
-	
+	width: 20%;
 }
 #entry-author-info #author-description {
 	float: left;
 	padding-left: 10px;
-	width: 75%;
+	width: 70%;
+	margin-top: 10px;
 }
