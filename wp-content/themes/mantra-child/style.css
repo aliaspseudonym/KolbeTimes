@@ -192,7 +192,7 @@ DESCRIPTION: Custom front page for Kolbe Times
 	line-height: 110%
 }
 #quote p {
-	line-height: 110%;
+	line-height: 110%; 	
 	font-style: bold;
 	font-size: x-large;
 	text-align: center;
@@ -355,10 +355,6 @@ width: 33%;
 	float: left;
 	margin-right: 5px;
 }
-#author-avatar img {
-	width: 150 px !important;
-	display: block;
-}
 #author-info {
 	min-height: 150px;
 }
@@ -367,4 +363,20 @@ width: 33%;
 	line-height: 32px;
 	
 }
-
+#entry-author-info #author-avatar {
+	background: #fff;
+	border: none;
+	float: left;
+	height: 300 px;
+	margin: 0 -104px 0 0;
+	padding-top: 0 px;
+	-moz-box-shadow:none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	
+}
+#entry-author-info #author-description {
+	float: left;
+	padding-left: 10px;
+	width: 75%;
+}
