@@ -770,9 +770,25 @@ class CP_ContactFormToEmail extends CP_CFTEMAIL_BaseClass {
 
     public function translate_json($str)
     {
-        $form_data = json_decode($this->cleanJSON($str));        
+        $form_data = json_decode($this->cleanJSON($str));      
+        
+        $form_data[1][0]->title = __($form_data[1][0]->title,'cfte');   
+        $form_data[1][0]->description = __($form_data[1][0]->description,'cfte');   
+              
         for ($i=0; $i < count($form_data[0]); $i++)    
+        {
             $form_data[0][$i]->title = __($form_data[0][$i]->title,'cfte');   
+            $form_data[0][$i]->userhelpTooltip = __($form_data[0][$i]->userhelpTooltip,'cfte'); 
+            $form_data[0][$i]->userhelp = __($form_data[0][$i]->userhelp,'cfte'); 
+            if ($form_data[0][$i]->ftype == 'fCommentArea')
+                $form_data[0][$i]->userhelp = __($form_data[0][$i]->userhelp,'cfte');   
+            else 
+                if ($form_data[0][$i]->ftype == 'fradio' || $form_data[0][$i]->ftype == 'fcheck' || $form_data[0][$i]->ftype == 'fradio')    
+                {
+                    for ($j=0; $j < count($form_data[0][$i]->choices); $j++)  
+                        $form_data[0][$i]->choices[$j] = __($form_data[0][$i]->choices[$j],'cfte'); 
+                } 
+        }    
         $str = json_encode($form_data);
         return $str;
     }

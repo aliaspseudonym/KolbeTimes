@@ -458,15 +458,25 @@ When you click a field already added into the contact form builder area, you can
 * Improved translations.
 * Compatible with the latest WordPress 4.2.x version
 
+= 1.1.4 =
+* Compatible with the WordPress 4.2.2 version
+
+= 1.1.5 =
+* Removed use of esc_sql for numeric values
+* Fixed XSS vulnerability
+* Fixed bug in translation functions.
+
 Important note: If you are using the Professional version don't update via the WP dashboard but using your personal update link. Contact us if you need further information: http://wordpress.dwbooster.com/support
 
 == Upgrade Notice ==
 
 Very Important note: If you are using the Professional version don't update via the WP dashboard but using your personal update link. Contact us if you need further information: http://wordpress.dwbooster.com/support
 
-= 1.1.3 =
-* Sanitized parameters used in SQL queries.
-* Support for large forms.
-* Improved translations.
+
+= 1.1.5 =
+* Removed use of esc_sql for numeric values
+* Fixed XSS vulnerability
+* Fixed bug in translation functions.
+
 
 Important note: If you are using the Professional version don't update via the WP dashboard but using your personal update link. Contact us if you need further information: http://wordpress.dwbooster.com/support
