@@ -61,10 +61,12 @@ DESCRIPTION: Custom front page for Kolbe Times
 	#grid div div {	
 		border-top: none !important;
 		border-bottom: 2px solid gray;
+		
 	}
 	#grid img {
 		margin-top: 2px !important;
 		margin-bottom: 2px !important;
+		width: 38% !important;
 	}
 	.row {
 		width: 100% !important;
