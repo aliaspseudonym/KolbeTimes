@@ -279,7 +279,7 @@ if ($message) echo "<div id='setting-error-settings_updated' class='updated sett
         </tr>  
         <tr valign="top">
         <th scope="row">Email Text (CSV file will be attached)</th>
-        <td><textarea type="text" name="cp_cfte_rep_message" rows="3" cols="80"><?php echo get_option('cp_cfte_rep_message', 'Attached you will find the data from the form submissions.'); ?></textarea></td>
+        <td><textarea type="text" name="cp_cfte_rep_message" rows="3" cols="80"><?php echo htmlspecialchars(get_option('cp_cfte_rep_message', 'Attached you will find the data from the form submissions.')); ?></textarea></td>
         </tr>        
         <tr valign="top">
         <th scope="row"></th>
