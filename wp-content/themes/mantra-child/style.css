@@ -61,13 +61,19 @@ DESCRIPTION: Custom front page for Kolbe Times
 	#grid div div {	
 		border-top: none !important;
 		border-bottom: 2px solid gray;
+		
 	}
 	#grid img {
 		margin-top: 2px !important;
 		margin-bottom: 2px !important;
+		width: 38% !important;
 	}
-	.column {
+	.row {
 		width: 100% !important;
+		border-bottom: 1px solid gray !important;
+	}
+	.row:last-child {
+		border-bottom: none !important;
 	}
 }
 
@@ -233,52 +239,68 @@ DESCRIPTION: Custom front page for Kolbe Times
 	position: relative;
 	left: 1.5%;
 }
+#grid p {
+	font-size: 16px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
 #grid div {
 	min-height: 163px;
 }
 #grid img {
 	display: block;
-	max-height: 175px;
-	max-width: 175px;
+	max-height: 200px;
+	max-width: 200px;
 	float: left;
 	position: relative;
-	left: 2.5%;
+	left: 1%;
 	top: 5px;
 	width: 40%;
 	margin: 2px 2px 2px 2px;
 }
 #grid  h1 {
 	font-weight: bold;
-	font-size: medium;
+	font-size: 18px;
 	text-indent: 5%;
+	padding-bottom: 4px;
+}
+#grid h2 {
+	font-size: 22px;
+	line-height: 23px;
 }
 
-#grid .column {
-height: 200 px;
-border-left: 2px solid gray;
-position: relative;
+#grid .row {
+height: auto;
+display: inline;
+width: 48%;
 float: left;
-width: 33%;
+border-left: 1px solid gray;
 }
 
-#grid .column:first-child {
+#grid .row:first-child {
 	border: none;
 }
 
-#grid .column div {
-	clear: both;
+#grid .row div:last-child {
+	border: none;
 }
-#grid .column div:nth-child(2) {
-	border-top: 1px solid gray;
+
+#grid .row div {
+	display: inline;
+	float: left;
+	border-bottom: 1px solid gray;
+	padding-bottom: 10px;
 }
-#grid .column div div {
+
+#grid .row div div {
 	clear: none;
-	padding-right: 2.5%;
+	padding-right: 1%;
 	margin: none;
 	float: right;
 	border: none;
-	display: block;
-	width: 50%;
+	display: inline;
+	width: 58%;
 }
 
 #writers  {
