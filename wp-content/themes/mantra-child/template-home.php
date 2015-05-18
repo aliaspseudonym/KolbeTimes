@@ -99,7 +99,7 @@ get_header(); ?>
 	<div class="row">
 		<div>
 			<div>
-				<br />
+				<br class="no-mobile" />
 				<h1>Book Reviews</h1>
 				<a href="<?php echo home_url('/'); ?>books-that-changed-my-life/"><h2>Books that Changed My Life</h2></a>
 				<p>Dr. Gordon Smith discusses the books that had a significant impact on his faith formation, and led to a change of heart.</p>
@@ -109,7 +109,7 @@ get_header(); ?>
 		</div>
 		<div>
 			<div>
-				<br />
+				<br class="no-mobile" />
 				<h1>Featured Artist</h1>
 				<a href="<?php echo home_url('/'); ?>featured-artist-rob-hudec/"><h2>Rob Hudec</h2></a>
 				<p>Meet Rob Hudec, who has gathered together his musical friends in a joyful new gospel album.</p>
@@ -119,7 +119,7 @@ get_header(); ?>
 		</div>
 		<div>
 			<div>
-				<br />
+				<br class="no-mobile" />
 				<h1>Guest Columnists</h1>
 				<a href="<?php echo home_url('/'); ?>dialogue-true-openness-steadfast-convictions/"><h2>Dialogue</h2></a>
 				<p>Deacon Adrian Martens reflects on the nature of true dialogue, which opens new doors while honouring parameters.</p>
@@ -131,7 +131,7 @@ get_header(); ?>
 	<div class="row">
 		<div>
 			<div>
-				<br />
+				<br class="no-mobile" />
 				<h1>Poetry</h1>
 				<a href="<?php echo home_url('/'); ?>valentine-for-ernest-mann/"><h2>Valentine for Ernest Mann</h2></a>
 				<p>A poem by poet, songwriter and novelist Naomi Shihab Nye, who brings a fresh, playful perspective to everyday life.</p>
@@ -141,7 +141,7 @@ get_header(); ?>
 		</div>
 		<div>
 			<div>
-				<br />
+				<br class="no-mobile" />
 				<h1>Film Reviews</h1>
 				<a href="<?php home_url('/'); ?>film-review-letters-to-father-jacob"><h2>Letters to Father Jacob</h2></a>
 				<p>Bill Locke reviews a film from Finland that teams up two unlikely protagonists in a moving story of redemption and hope.</p>
@@ -151,7 +151,7 @@ get_header(); ?>
 		</div>
 		<div>
 			<div>
-				<br />
+				<br class="no-mobile" />
 				<h1>Editorials</h1>
 				<a href="<?php echo home_url('/'); ?>musings-from-the-editors-desk"><h2>Musings from the Editor's Desk</h2></a>
 				<p>Which words stick in our minds, and why? This issue of Kolbe Times explores the power of words.</p>

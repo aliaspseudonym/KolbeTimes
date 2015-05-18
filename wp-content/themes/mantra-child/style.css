@@ -23,6 +23,9 @@ DESCRIPTION: Custom front page for Kolbe Times
 /* Adaptive Styles */
 
 @media (max-width: 800px) {
+	.no-mobile{
+		display: none;
+	}
 	#adv-custom-pager {
 	clear: both;
 	float: none;
