@@ -254,10 +254,10 @@ DESCRIPTION: Custom front page for Kolbe Times
 	max-width: 200px;
 	float: left;
 	position: relative;
-	left: 1%;
+	left: 0%;
 	top: 5px;
-	width: 40%;
-	margin: 2px 2px 2px 2px;
+	width: 38%;
+	margin: 2px 2px 2px 5px;
 }
 #grid  h1 {
 	font-weight: bold;
@@ -273,7 +273,7 @@ DESCRIPTION: Custom front page for Kolbe Times
 #grid .row {
 height: auto;
 display: inline;
-width: 48%;
+width: 47%;
 float: left;
 border-left: 1px solid gray;
 }
@@ -295,7 +295,7 @@ border-left: 1px solid gray;
 
 #grid .row div div {
 	clear: none;
-	padding-right: 1%;
+	padding-right: 0%;
 	margin: none;
 	float: right;
 	border: none;
