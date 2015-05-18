@@ -96,7 +96,7 @@ get_header(); ?>
 			<section id= "other-content">
 
 <div id="grid" class="short-columns">
-	<div class="column">
+	<div class="row">
 		<div>
 			<div>
 				<br />
@@ -117,8 +117,18 @@ get_header(); ?>
 			</div>
 			<a href="<?php echo home_url('/'); ?>featured-artist-rob-hudec/"><img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/05/featuredartistthumb.jpg"></a>
 		</div>
+		<div>
+			<div>
+				<br />
+				<h1>Guest Columnists</h1>
+				<a href="<?php echo home_url('/'); ?>dialogue-true-openness-steadfast-convictions/"><h2>Dialogue</h2></a>
+				<p>Deacon Adrian Martens reflects on the nature of true dialogue, which opens new doors while honouring parameters.</p>
+				<p><a href="<?php echo home_url('/'); ?>category/guest-columnists/">All Guest Columnists</a></p>
+			</div>
+			<a href="<?php echo home_url('/'); ?>dialogue-true-openness-steadfast-convictions/"><img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/05/GuestColumnistThumb.jpg"/></a>
+		</div>
 	</div>
-	<div class="column">
+	<div class="row">
 		<div>
 			<div>
 				<br />
@@ -139,8 +149,6 @@ get_header(); ?>
 			</div>
 			<a href="<?php home_url('/'); ?>film-review-letters-to-father-jacob"><img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/05/FilmReviewsThumb.jpg"/></a>
 		</div>
-	</div>
-	<div class="column">
 		<div>
 			<div>
 				<br />
@@ -150,16 +158,6 @@ get_header(); ?>
 				<p><a href="<?php echo home_url('/'); ?>category/editorials">All Editorials</a></p>
 			</div>
 			<a href="<?php echo home_url('/'); ?>musings-from-the-editors-desk"><img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/05/musing.jpg"/></a>
-		</div>
-		<div>
-			<div>
-				<br />
-				<h1>Guest Columnists</h1>
-				<a href="<?php echo home_url('/'); ?>dialogue-true-openness-steadfast-convictions/"><h2>Dialogue</h2></a>
-				<p>Deacon Adrian Martens reflects on the nature of true dialogue, which opens new doors while honouring parameters.</p>
-				<p><a href="<?php echo home_url('/'); ?>category/guest-columnists/">All Guest Columnists</a></p>
-			</div>
-			<a href="<?php echo home_url('/'); ?>dialogue-true-openness-steadfast-convictions/"><img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/05/GuestColumnistThumb.jpg"/></a>
 		</div>
 	</div>
 </div> <!-- grid -->
