@@ -246,7 +246,10 @@ DESCRIPTION: Custom front page for Kolbe Times
 }
 
 #grid div {
-	min-height: 163px;
+	padding-top: 10px;
+	position: relative;
+	margin-left: 5px;
+	min-height: 190px;
 }
 #grid img {
 	display: block;
