@@ -10,10 +10,9 @@
 
 function mantra_mobile_meta() {
 global $mantra_options;
-foreach ($mantra_options as $key => $value) {
-    							 ${"$key"} = $value ;
-									}
- return '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">';
+if ($mantra_options['mantra_zoom'] == 1) 
+	return '<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0">';
+else return '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">';
 }
 
 
@@ -85,9 +84,9 @@ foreach ($mantra_options as $key => $value) {
 		wp_register_script('cryout-frontend',get_template_directory_uri() . '/js/frontend.js', array('jquery') );
 		wp_enqueue_script('cryout-frontend');
   		// If mantra from page is enabled and the current page is home page - load the nivo slider js							
-	if($mantra_frontpage == "Enable" && is_front_page()) {
+		if($mantra_frontpage == "Enable" && is_front_page()) {
 							wp_register_script('cryout-nivoSlider',get_template_directory_uri() . '/js/nivo-slider.js', array('jquery'));
-							wp_enqueue_script('cryout-nivoSlider');	
+							wp_enqueue_script('cryout-nivoSlider');
 							}
   	}
 	
