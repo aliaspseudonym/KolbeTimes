@@ -596,7 +596,13 @@ function wpautop( $pee, $br = true ) {
 		$pee = str_replace(array_keys($pre_tags), array_values($pre_tags), $pee);
 
 	// Restore newlines in all elements.
+<<<<<<< HEAD
 	$pee = str_replace( " <!-- wpnl --> ", "\n", $pee );
+=======
+	if ( false !== strpos( $pee, '<!-- wpnl -->' ) ) {
+		$pee = str_replace( array( ' <!-- wpnl --> ', '<!-- wpnl -->' ), "\n", $pee );
+	}
+>>>>>>> 4474c6bedcde418cd3f1a748b15cc0a8b721f179
 
 	return $pee;
 }

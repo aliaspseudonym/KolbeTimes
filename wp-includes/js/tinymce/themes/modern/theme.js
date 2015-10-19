@@ -28,7 +28,11 @@ tinymce.ThemeManager.add('modern', function(editor) {
 	var defaultToolbar = "undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | " +
 		"bullist numlist outdent indent | link image";
 
+<<<<<<< HEAD
 	function createToolbar(items) {
+=======
+	function createToolbar(items, size) {
+>>>>>>> 4474c6bedcde418cd3f1a748b15cc0a8b721f179
 		var toolbarItems = [], buttonGroup;
 
 		if (!items) {
@@ -83,6 +87,7 @@ tinymce.ThemeManager.add('modern', function(editor) {
 					});
 				}
 			}
+<<<<<<< HEAD
 
 			if (item == "|") {
 				buttonGroup = null;
@@ -94,6 +99,14 @@ tinymce.ThemeManager.add('modern', function(editor) {
 						item.size = settings.toolbar_items_size;
 					}
 
+=======
+
+			if (item == "|") {
+				buttonGroup = null;
+			} else {
+				if (Factory.has(item)) {
+					item = {type: item, size: size};
+>>>>>>> 4474c6bedcde418cd3f1a748b15cc0a8b721f179
 					toolbarItems.push(item);
 					buttonGroup = null;
 				} else {
@@ -112,10 +125,14 @@ tinymce.ThemeManager.add('modern', function(editor) {
 						}
 
 						item.type = item.type || 'button';
+<<<<<<< HEAD
 
 						if (settings.toolbar_items_size) {
 							item.size = settings.toolbar_items_size;
 						}
+=======
+						item.size = size;
+>>>>>>> 4474c6bedcde418cd3f1a748b15cc0a8b721f179
 
 						item = Factory.create(item);
 						buttonGroup.items.push(item);
@@ -136,6 +153,7 @@ tinymce.ThemeManager.add('modern', function(editor) {
 			items: toolbarItems
 		};
 	}
+<<<<<<< HEAD
 
 	/**
 	 * Creates the toolbars from config and returns a toolbar array.
@@ -148,6 +166,21 @@ tinymce.ThemeManager.add('modern', function(editor) {
 		function addToolbar(items) {
 			if (items) {
 				toolbars.push(createToolbar(items));
+=======
+
+	/**
+	 * Creates the toolbars from config and returns a toolbar array.
+	 *
+	 * @param {String} size Optional toolbar item size.
+	 * @return {Array} Array with toolbars.
+	 */
+	function createToolbars(size) {
+		var toolbars = [];
+
+		function addToolbar(items) {
+			if (items) {
+				toolbars.push(createToolbar(items, size));
+>>>>>>> 4474c6bedcde418cd3f1a748b15cc0a8b721f179
 				return true;
 			}
 		}
@@ -670,7 +703,7 @@ tinymce.ThemeManager.add('modern', function(editor) {
 				border: 1,
 				items: [
 					settings.menubar === false ? null : {type: 'menubar', border: '0 0 1 0', items: createMenuButtons()},
-					createToolbars()
+					createToolbars(settings.toolbar_items_size)
 				]
 			});
 
@@ -747,7 +780,7 @@ tinymce.ThemeManager.add('modern', function(editor) {
 			border: 1,
 			items: [
 				settings.menubar === false ? null : {type: 'menubar', border: '0 0 1 0', items: createMenuButtons()},
-				createToolbars(),
+				createToolbars(settings.toolbar_items_size),
 				{type: 'panel', name: 'iframe', layout: 'stack', classes: 'edit-area', html: '', border: '1 0 0 0'}
 			]
 		});

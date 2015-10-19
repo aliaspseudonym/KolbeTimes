@@ -1689,6 +1689,7 @@ if ( !function_exists('wp_new_user_notification') ) :
  *
  * @since 2.0.0
  * @since 4.3.0 The `$plaintext_pass` parameter was changed to `$notify`.
+<<<<<<< HEAD
  *
  * @param int    $user_id User ID.
  * @param string $notify  Whether admin and user should be notified ('both') or
@@ -1696,6 +1697,25 @@ if ( !function_exists('wp_new_user_notification') ) :
  */
 function wp_new_user_notification( $user_id, $notify = '' ) {
 	global $wpdb;
+=======
+ * @since 4.3.1 The `$plaintext_pass` parameter was deprecated. `$notify` added as a third parameter.
+ *
+ * @global wpdb         $wpdb      WordPress database object for queries.
+ * @global PasswordHash $wp_hasher Portable PHP password hashing framework instance.
+ *
+ * @param int    $user_id    User ID.
+ * @param null   $deprecated Not used (argument deprecated).
+ * @param string $notify     Optional. Type of notification that should happen. Accepts 'admin' or an empty
+ *                           string (admin only), or 'both' (admin and user). The empty string value was kept
+ *                           for backward-compatibility purposes with the renamed parameter. Default empty.
+ */
+function wp_new_user_notification( $user_id, $deprecated = null, $notify = '' ) {
+	if ( $deprecated !== null ) {
+		_deprecated_argument( __FUNCTION__, '4.3.1' );
+	}
+
+	global $wpdb, $wp_hasher;
+>>>>>>> 4474c6bedcde418cd3f1a748b15cc0a8b721f179
 	$user = get_userdata( $user_id );
 
 	// The blogname option is escaped with esc_html on the way into the database in sanitize_option

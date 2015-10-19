@@ -1207,7 +1207,12 @@ class Walker_CategoryDropdown extends Walker {
 
 		$output .= "\t<option class=\"level-$depth\" value=\"" . esc_attr( $category->{$value_field} ) . "\"";
 
+<<<<<<< HEAD
 		if ( $category->{$value_field} == $args['selected'] )
+=======
+		// Type-juggling causes false matches, so we force everything to a string.
+		if ( (string) $category->{$value_field} === (string) $args['selected'] )
+>>>>>>> 4474c6bedcde418cd3f1a748b15cc0a8b721f179
 			$output .= ' selected="selected"';
 		$output .= '>';
 		$output .= $pad.$cat_name;

@@ -245,6 +245,22 @@ textarea[readonly] {
 	color: #dc3232;
 	margin-left: -25px;
 	vertical-align: middle;
+<<<<<<< HEAD
+=======
+}
+
+/* Adjust error indicator for password layout */
+.form-table .form-required.user-pass1-wrap.form-invalid td:after {
+	content: '';
+}
+
+.form-table .form-required.user-pass1-wrap.form-invalid .password-input-wrapper:after {
+	content: '\f534';
+	font: normal 20px/1 dashicons;
+	color: #dc3232;
+	margin: 0 6px 0 -29px;
+	vertical-align: middle;
+>>>>>>> 4474c6bedcde418cd3f1a748b15cc0a8b721f179
 }
 
 .form-input-tip {

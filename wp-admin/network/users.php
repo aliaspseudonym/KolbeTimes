@@ -90,7 +90,12 @@ function confirm_delete_users( $users ) {
 							<li><label><input type="radio" id="delete_option0" name="delete[<?php echo $details->userblog_id . '][' . $delete_user->ID ?>]" value="delete" checked="checked" />
 							<?php _e( 'Delete all content.' ); ?></label></li>
 							<li><label><input type="radio" id="delete_option1" name="delete[<?php echo $details->userblog_id . '][' . $delete_user->ID ?>]" value="reassign" />
+<<<<<<< HEAD
 							<?php _e( 'Attribute all content to:' ) . "</label>\n" . $user_dropdown; ?></li>
+=======
+							<?php _e( 'Attribute all content to:' ); ?></label>
+							<?php echo $user_dropdown; ?></li>
+>>>>>>> 4474c6bedcde418cd3f1a748b15cc0a8b721f179
 						</ul>
 						<?php
 					}

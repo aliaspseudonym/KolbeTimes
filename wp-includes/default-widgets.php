@@ -1574,8 +1574,12 @@ class WP_Widget_Tag_Cloud extends WP_Widget {
 		<p class="nav-menu-widget-no-menus-message" <?php if ( ! empty( $menus ) ) { echo ' style="display:none" '; } ?>>
 			<?php
 			if ( isset( $GLOBALS['wp_customize'] ) && $GLOBALS['wp_customize'] instanceof WP_Customize_Manager ) {
+<<<<<<< HEAD
 				// @todo When expanding a panel, the JS should be smart enough to collapse any existing panels and sections.
 				$url = 'javascript: wp.customize.section.each(function( section ){ section.collapse(); }); wp.customize.panel( "nav_menus" ).focus();';
+=======
+				$url = 'javascript: wp.customize.panel( "nav_menus" ).focus();';
+>>>>>>> 4474c6bedcde418cd3f1a748b15cc0a8b721f179
 			} else {
 				$url = admin_url( 'nav-menus.php' );
 			}

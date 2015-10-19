@@ -6,6 +6,7 @@
 		$pass1Wrap,
 		$pass1,
 		$pass1Text,
+<<<<<<< HEAD
 
 		$pass2,
 
@@ -16,13 +17,39 @@
 		$submitButtons,
 		$submitButton,
 		currentPass;
+=======
+		$pass1Label,
+		$pass2,
+		$weakRow,
+		$weakCheckbox,
+		$toggleButton,
+		$submitButtons,
+		$submitButton,
+		currentPass,
+		inputEvent;
+
+	/*
+	 * Use feature detection to determine whether password inputs should use
+	 * the `keyup` or `input` event. Input is preferred but lacks support
+	 * in legacy browsers.
+	 */
+	if ( 'oninput' in document.createElement( 'input' ) ) {
+		inputEvent = 'input';
+	} else {
+		inputEvent = 'keyup';
+	}
+>>>>>>> 4474c6bedcde418cd3f1a748b15cc0a8b721f179
 
 	function generatePassword() {
 		if ( typeof zxcvbn !== 'function' ) {
 			setTimeout( generatePassword, 50 );
 		} else {
 			$pass1.val( $pass1.data( 'pw' ) );
+<<<<<<< HEAD
 			$pass1.trigger( 'pwupdate' );
+=======
+			$pass1.trigger( 'pwupdate' ).trigger( 'wp-check-valid-field' );
+>>>>>>> 4474c6bedcde418cd3f1a748b15cc0a8b721f179
 			if ( 1 !== parseInt( $toggleButton.data( 'start-masked' ), 10 ) ) {
 				$pass1Wrap.addClass( 'show-password' );
 			} else {
@@ -47,7 +74,11 @@
 			.addClass( $pass1[0].className )
 			.data( 'pw', $pass1.data( 'pw' ) )
 			.val( $pass1.val() )
+<<<<<<< HEAD
 			.on( 'keyup', function () {
+=======
+			.on( inputEvent, function () {
+>>>>>>> 4474c6bedcde418cd3f1a748b15cc0a8b721f179
 				if ( $pass1Text.val() === currentPass ) {
 					return;
 				}
@@ -62,7 +93,11 @@
 			generatePassword();
 		}
 
+<<<<<<< HEAD
 		$pass1.on( 'keyup pwupdate', function () {
+=======
+		$pass1.on( inputEvent + ' pwupdate', function () {
+>>>>>>> 4474c6bedcde418cd3f1a748b15cc0a8b721f179
 			if ( $pass1.val() === currentPass ) {
 				return;
 			}
@@ -107,6 +142,11 @@
 
 				$pass1Text.focus();
 
+<<<<<<< HEAD
+=======
+				$pass1Label.attr( 'for', 'pass1-text' );
+
+>>>>>>> 4474c6bedcde418cd3f1a748b15cc0a8b721f179
 				if ( ! _.isUndefined( $pass1Text[0].setSelectionRange ) ) {
 					$pass1Text[0].setSelectionRange( 0, 100 );
 				}
@@ -126,6 +166,11 @@
 
 				$pass1.focus();
 
+<<<<<<< HEAD
+=======
+				$pass1Label.attr( 'for', 'pass1' );
+
+>>>>>>> 4474c6bedcde418cd3f1a748b15cc0a8b721f179
 				if ( ! _.isUndefined( $pass1[0].setSelectionRange ) ) {
 					$pass1[0].setSelectionRange( 0, 100 );
 				}
@@ -139,6 +184,11 @@
 			$cancelButton;
 
 		$pass1Row = $('.user-pass1-wrap');
+<<<<<<< HEAD
+=======
+		$pass1Label = $pass1Row.find('th label').attr( 'for', 'pass1-text' );
+
+>>>>>>> 4474c6bedcde418cd3f1a748b15cc0a8b721f179
 		// hide this
 		$('.user-pass2-wrap').hide();
 
@@ -165,7 +215,11 @@
 		 * This fixes the issue by copying any changes from the hidden
 		 * pass2 field to the pass1 field, then running check_pass_strength.
 		 */
+<<<<<<< HEAD
 		$pass2 = $('#pass2').on( 'keyup', function () {
+=======
+		$pass2 = $('#pass2').on( inputEvent, function () {
+>>>>>>> 4474c6bedcde418cd3f1a748b15cc0a8b721f179
 			if ( $pass2.val().length > 0 ) {
 				$pass1.val( $pass2.val() );
 				$pass2.val('');
@@ -203,6 +257,13 @@
 
 			$generateButton.show();
 			$passwordWrapper.hide();
+<<<<<<< HEAD
+=======
+
+			// Clear password field to prevent update
+			$pass1.val( '' ).trigger( 'pwupdate' );
+			$submitButtons.prop( 'disabled', false );
+>>>>>>> 4474c6bedcde418cd3f1a748b15cc0a8b721f179
 		} );
 
 		$pass1Row.closest('form').on( 'submit', function () {
@@ -246,7 +307,11 @@
 		var $colorpicker, $stylesheet, user_id, current_user_id,
 			select = $( '#display_name' );
 
+<<<<<<< HEAD
 		$('#pass1').val('').on( 'keyup pwupdate', check_pass_strength );
+=======
+		$('#pass1').val('').on( inputEvent + ' pwupdate', check_pass_strength );
+>>>>>>> 4474c6bedcde418cd3f1a748b15cc0a8b721f179
 		$('#pass-strength-result').show();
 		$('.color-palette').click( function() {
 			$(this).siblings('input[name="admin_color"]').prop('checked', true);

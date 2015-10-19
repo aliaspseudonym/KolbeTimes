@@ -462,6 +462,15 @@ function shortcode_parse_atts($text) {
 			elseif (isset($m[8]))
 				$atts[] = stripcslashes($m[8]);
 		}
+
+		// Reject any unclosed HTML elements
+		foreach( $atts as &$value ) {
+			if ( false !== strpos( $value, '<' ) ) {
+				if ( 1 !== preg_match( '/^[^<]*+(?:<[^>]*+>[^<]*+)*+$/', $value ) ) {
+					$value = '';
+				}
+			}
+		}
 	} else {
 		$atts = ltrim($text);
 	}
@@ -536,10 +545,17 @@ function strip_shortcodes( $content ) {
 
 	$pattern = get_shortcode_regex();
 	$content = preg_replace_callback( "/$pattern/s", 'strip_shortcode_tag', $content );
+<<<<<<< HEAD
 
 	// Always restore square braces so we don't break things like <!--[if IE ]>
 	$content = unescape_invalid_shortcodes( $content );
 
+=======
+
+	// Always restore square braces so we don't break things like <!--[if IE ]>
+	$content = unescape_invalid_shortcodes( $content );
+
+>>>>>>> 4474c6bedcde418cd3f1a748b15cc0a8b721f179
 	return $content;
 }
 

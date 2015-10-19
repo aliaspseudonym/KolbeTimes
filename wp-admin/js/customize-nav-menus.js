@@ -119,6 +119,13 @@
 		initialize: function() {
 			var self = this;
 
+<<<<<<< HEAD
+=======
+			if ( ! api.panel.has( 'nav_menus' ) ) {
+				return;
+			}
+
+>>>>>>> 4474c6bedcde418cd3f1a748b15cc0a8b721f179
 			this.$search = $( '#menu-items-search' );
 			this.sectionContent = this.$el.find( '.accordion-section-content' );
 

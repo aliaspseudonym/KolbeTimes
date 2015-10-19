@@ -136,11 +136,21 @@
 		} );
 
 		editor.on( 'preinit', function() {
+<<<<<<< HEAD
 			toolbar = editor.wp._createToolbar( [
 				'wp_link_preview',
 				'wp_link_edit',
 				'wp_link_remove'
 			], true );
+=======
+			if ( editor.wp && editor.wp._createToolbar ) {
+				toolbar = editor.wp._createToolbar( [
+					'wp_link_preview',
+					'wp_link_edit',
+					'wp_link_remove'
+				], true );
+			}
+>>>>>>> 4474c6bedcde418cd3f1a748b15cc0a8b721f179
 		} );
 	} );
 } )( window.tinymce );

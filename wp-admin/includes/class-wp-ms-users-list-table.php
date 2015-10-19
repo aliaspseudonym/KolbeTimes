@@ -233,7 +233,11 @@ class WP_MS_Users_List_Table extends WP_List_Table {
 	 * @param WP_User $user The current WP_User object.
 	 */
 	public function column_email( $user ) {
+<<<<<<< HEAD
 		echo "<a href='mailto:$user->user_email'>$user->user_email</a>";
+=======
+		echo "<a href='" . esc_url( "mailto:$user->user_email" ) . "'>$user->user_email</a>";
+>>>>>>> 4474c6bedcde418cd3f1a748b15cc0a8b721f179
 	}
 
 	/**

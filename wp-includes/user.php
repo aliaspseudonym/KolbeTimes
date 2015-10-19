@@ -261,7 +261,11 @@ function wp_validate_logged_in_cookie( $user_id ) {
  * @global wpdb $wpdb WordPress database object for queries.
  *
  * @param int          $userid      User ID.
+<<<<<<< HEAD
  * @param array|string $post_type   Optional. Post type(s) to count the number of posts for. Default 'post'.
+=======
+ * @param array|string $post_type   Optional. Single post type or array of post types to count the number of posts for. Default 'post'.
+>>>>>>> 4474c6bedcde418cd3f1a748b15cc0a8b721f179
  * @param bool         $public_only Optional. Whether to only return counts for public posts. Default false.
  * @return int Number of posts the user has written in this post type.
  */
@@ -277,14 +281,22 @@ function count_user_posts( $userid, $post_type = 'post', $public_only = false ) 
 	 *
 	 * @since 2.7.0
 	 * @since 4.1.0 Added `$post_type` argument.
+<<<<<<< HEAD
 	 * @since 4.3.0 Added `$public_only` argument.
 	 *
 	 * @param int          $count       The user's post count.
 	 * @param int          $userid      User ID.
 	 * @param string|array $post_types  Post types to count the number of posts for.
+=======
+	 * @since 4.3.1 Added `$public_only` argument.
+	 *
+	 * @param int          $count       The user's post count.
+	 * @param int          $userid      User ID.
+	 * @param string|array $post_type   Single post type or array of post types to count the number of posts for.
+>>>>>>> 4474c6bedcde418cd3f1a748b15cc0a8b721f179
 	 * @param bool         $public_only Whether to limit counted posts to public posts.
 	 */
-	return apply_filters( 'get_usernumposts', $count, $userid, $post_type );
+	return apply_filters( 'get_usernumposts', $count, $userid, $post_type, $public_only );
 }
 
 /**
@@ -2619,7 +2631,11 @@ function register_new_user( $user_login, $user_email ) {
 
 	update_user_option( $user_id, 'default_password_nag', true, true ); //Set up the Password change nag.
 
+<<<<<<< HEAD
 	wp_new_user_notification( $user_id, 'both' );
+=======
+	wp_new_user_notification( $user_id, null, 'both' );
+>>>>>>> 4474c6bedcde418cd3f1a748b15cc0a8b721f179
 
 	return $user_id;
 }
