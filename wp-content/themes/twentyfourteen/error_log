@@ -1,0 +1,1 @@
+[11-Oct-2015 07:03:57] PHP Fatal error:  Call to undefined function  get_header() in /home1/kolbetim/public_html/wp-content/themes/twentyfourteen/404.php on line 10
