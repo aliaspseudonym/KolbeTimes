@@ -56,6 +56,8 @@ function hefo_field_textarea($name, $label = '', $tips = '', $attrs = '') {
 
     if (!isset($options[$name]))
         $options[$name] = '';
+    
+    if (is_array($options[$name])) $options[$name] = implode("\n", $options[$name]);
 
     if (strpos($attrs, 'cols') === false)
         $attrs .= 'cols="70"';
@@ -65,6 +67,30 @@ function hefo_field_textarea($name, $label = '', $tips = '', $attrs = '') {
     echo '<th scope="row">';
     echo '<label for="options[' . $name . ']">' . $label . '</label></th>';
     echo '<td><textarea style="width: 100%; height: 100px" wrap="off" name="options[' . $name . ']">' .
+    htmlspecialchars($options[$name]) . '</textarea>';
+    echo '<p class="description">' . $tips . '</p>';
+    echo '</td>';
+}
+
+function hefo_field_textarea_enable($name, $label = '', $tips = '', $attrs = '') {
+    global $options;
+
+    if (!isset($options[$name]))
+        $options[$name] = '';
+    
+    if (is_array($options[$name])) $options[$name] = implode("\n", $options[$name]);
+
+    if (strpos($attrs, 'cols') === false)
+        $attrs .= 'cols="70"';
+    if (strpos($attrs, 'rows') === false)
+        $attrs .= 'rows="5"';
+
+    echo '<th scope="row">';
+    echo '<label for="options[' . $name . ']">' . $label . '</label></th>';
+    echo '<td>';
+    echo '<input type="checkbox" ' . $attrs . ' name="options[' . $name . '_enabled]" value="1" ' .
+    (isset($options[$name . '_enabled']) ? 'checked' : '') . '> Enable<br>';
+    echo '<textarea style="width: 100%; height: 100px" wrap="off" name="options[' . $name . ']">' .
     htmlspecialchars($options[$name]) . '</textarea>';
     echo '<p class="description">' . $tips . '</p>';
     echo '</td>';
@@ -86,6 +112,17 @@ if (isset($_POST['save'])) {
         $agents2[] = strtolower($agent);
     }
     $options['mobile_user_agents_parsed'] = implode('|', $agents2);
+    
+    $script_async_handles1 = explode("\n", $options['script_async_handles']);
+    $script_async_handles2 = array();
+    foreach ($script_async_handles1 as $value) {
+        $value = trim($value);
+        if (empty($value))
+            continue;
+        $script_async_handles2[] = strtolower($value);
+    }
+    $options['script_async_handles'] = $script_async_handles2;
+    
     update_option('hefo', $options);
 }
 else {
@@ -186,20 +223,21 @@ else {
     <h2>Header and Footer</h2>
 
     <?php if (!isset($dismissed['rate'])) { ?>
-        <div class="updated">
+    <div class="updated"><p>
             I never asked before and I'm curious: <a href="http://wordpress.org/extend/plugins/header-footer/" target="_blank"><strong>would you rate this plugin</strong></a>?
             (takes only few seconds required - account on WordPress.org, every blog owner should have one...). <strong>Really appreciated, Stefano</strong>.
             <div class="satollo-dismiss"><a href="<?php echo wp_nonce_url($_SERVER['REQUEST_URI'] . '&dismiss=rate') ?>">Dismiss</a></div>
             <div style="clear: both"></div>
-        </div>
+            </p>   
+    </div>
     <?php } ?>
 
     <p>
         Check out my other useful plugins:<br>
-        <a href="http://www.satollo.net/plugins/comment-plus?utm_source=hyper-cache&utm_medium=banner&utm_campaign=comment-plus" target="_blank"><img src="http://www.satollo.net/images/plugins/comment-plus-icon.png"></a>
-        <a href="http://www.satollo.net/plugins/hyper-cache?utm_source=hyper-cache&utm_medium=banner&utm_campaign=hyper-cache" target="_blank"><img src="http://www.satollo.net/images/plugins/hyper-cache-icon.png"></a>
-        <a href="http://www.satollo.net/plugins/include-me?utm_source=hyper-cache&utm_medium=banner&utm_campaign=include-me" target="_blank"><img src="http://www.satollo.net/images/plugins/include-me-icon.png"></a>
-        <a href="http://www.thenewsletterplugin.com/?utm_source=hyper-cache&utm_medium=banner&utm_campaign=newsletter" target="_blank"><img src="http://www.satollo.net/images/plugins/newsletter-icon.png"></a>
+        <a href="http://www.satollo.net/plugins/comment-plus?utm_source=hyper-cache&utm_medium=banner&utm_campaign=comment-plus" target="_blank"><img width="40" src="http://www.satollo.net/images/plugins/comment-plus-icon.png"></a>
+        <a href="http://www.satollo.net/plugins/hyper-cache?utm_source=hyper-cache&utm_medium=banner&utm_campaign=hyper-cache" target="_blank"><img width="40" src="http://www.satollo.net/images/plugins/hyper-cache-icon.png"></a>
+        <a href="http://www.satollo.net/plugins/include-me?utm_source=hyper-cache&utm_medium=banner&utm_campaign=include-me" target="_blank"><img width="40" src="http://www.satollo.net/images/plugins/include-me-icon.png"></a>
+        <a href="http://www.thenewsletterplugin.com/?utm_source=hyper-cache&utm_medium=banner&utm_campaign=newsletter" target="_blank"><img width="40" src="http://www.satollo.net/images/plugins/newsletter-icon.png"></a>
     </p>
 
 
@@ -219,6 +257,9 @@ else {
                 <li><a href="#tabs-9"><?php _e('SEO', 'header-footer'); ?></a></li>
                 <li><a href="#tabs-5"><?php _e('Snippets', 'header-footer'); ?></a></li>
                 <li><a href="#tabs-6"><?php _e('BBPress', 'header-footer'); ?></a></li>
+                <!--
+                <li><a href="#tabs-6a"><?php _e('Other post types', 'header-footer'); ?></a></li>
+                -->
                 <li><a href="#tabs-8"><?php _e('Advanced', 'header-footer'); ?></a></li>
                 <li><a href="#tabs-7"><?php _e('Notes and...', 'header-footer'); ?></a></li>
                 <li><a href="#tabs-thankyou"><?php _e('Thank you', 'header-footer'); ?></a></li>
@@ -229,6 +270,7 @@ else {
                     <tr valign="top"><?php hefo_field_textarea('head', __('Code to be added on HEAD section of every page', 'header-footer'), 'It will be added on HEAD section of the home as well', 'rows="10"'); ?></tr>
                     <tr valign="top"><?php hefo_field_textarea('head_home', __('Code to be added on HEAD section of the home', 'header-footer'), '', 'rows="4"'); ?></tr>
                     <tr valign="top"><?php hefo_field_textarea('footer', __('Code to be added before the end of the page', 'header-footer'), 'It works if your theme has the wp_footer call. It should be just before the &lt;/body&gt; closing tag', 'rows="10"'); ?></tr>
+                    <tr valign="top"><?php hefo_field_textarea_enable('body', __('Added just after the &lt;body&gt; tag', 'header-footer'), '', 'rows="10"'); ?></tr>
                 </table>
             </div>
 
@@ -367,12 +409,26 @@ else {
                 <table class="form-table">
                     <tr valign="top"><?php hefo_field_textarea('bbp_template_before_single_forum', __('Before single forum', 'header-footer'), 'Hook: bbp_template_before_single_forum', 'rows="10"'); ?></tr>
                     <tr valign="top"><?php hefo_field_textarea('bbp_template_before_single_topic', __('Before single topic', 'header-footer'), 'Hook: bbp_template_before_single_topic', 'rows="10"'); ?></tr>
+                    <tr valign="top"><?php hefo_field_textarea('bbp_template_after_single_topic', __('After single topic', 'header-footer'), 'Hook: bbp_template_after_single_topic', 'rows="10"'); ?></tr>
                     <tr valign="top"><?php hefo_field_textarea('bbp_theme_before_reply_content', __('Before reply content', 'header-footer'), 'Hook: bbp_theme_before_reply_content', 'rows="10"'); ?></tr>
                     <tr valign="top"><?php hefo_field_textarea('bbp_theme_after_reply_content', __('After reply content', 'header-footer'), 'Hook: bbp_theme_after_reply_content', 'rows="10"'); ?></tr>
                 </table>
 
             </div>
-
+            <!--
+            <div id="tabs-6s">
+                <p>
+                </p>
+                <?php $post_types = get_post_types(array('public'=>true, '_builtin'=>false), 'objects'); ?>
+                <?php foreach ($post_types as $post_type) { ?>
+                <h3><?php echo esc_html($post_type->label)?> (<?php echo esc_html($post_type->name)?>)</h3>
+                <table class="form-table">
+                <tr><?php hefo_field_textarea($post_type->name . '_before', __('Before the content', 'header-footer'), '', 'rows="10"'); ?></tr>
+                <tr><?php hefo_field_textarea($post_type->name . '_after', __('After the content', 'header-footer'), '', 'rows="10"'); ?></tr>
+                </table>
+                <?php } ?>
+            </div>            
+            -->
 
             <div id="tabs-8">
                 <table class="form-table">
@@ -385,6 +441,32 @@ else {
 
                     </tr>
                 </table>
+                
+                <h3>Web performance</h3>
+                <p>
+                    Some JavaScript can be marked to be loaded asynchronously, for example the comment-reply.js of WordPress.
+                    Not always asynchronous load work, for example jQuery cannot usually loaded in this way. Since WordPress does 
+                    not support this feature natively, here you can force thise feature on specific scripts.<br>
+                    Usually you can add comment-reply, akismet-form, admin-bar.<br>
+                    You can read more on <a href="http://www.satollo.net/javascript-asyn-load-for-wordpress-enqueued-scripts" target="_blank">this article</a>
+                    and/or ask on my <a href="http://www.satollo.net/forums" target="_blank">forum area</a>.
+                </p>
+                
+                <table class="form-table">
+                    <tr valign="top">
+                        <th scope="row">
+                            Script handle debug
+                        </th>
+                        <?php hefo_field_checkbox_only('script_handle_debug', __('Activate in page debug info: see the source page to find the handles', 'header-footer')); ?>
+                    
+                    </tr>
+                    <tr valign="top">
+                        <?php
+                        hefo_field_textarea('script_async_handles', __('Script handles to load asynchronously', 'header-footer'), 'One per line', 'rows="10"');
+                        ?>
+                    </tr>
+                </table>
+                
                 <h3>Head meta links</h3>
                 <p>
                     WordPress automatically add some meta link on the head of the page, for example the RSS links, the previous and next
@@ -397,7 +479,7 @@ else {
                     </tr>
                     <tr valign="top">
                         <th scope="row">Disable css media</th>
-                        <?php hefo_field_checkbox_only('disable_css_media', __('Disable the meda attribute on css links generated by WordPress, id the option above is enabled.', 'header-footer'), '', 'http://www.satollo.net/plugins/header-footer#disable_css_media'); ?>
+                        <?php hefo_field_checkbox_only('disable_css_media', __('Disable the media attribute on css links generated by WordPress, id the option above is enabled.', 'header-footer'), '', 'http://www.satollo.net/plugins/header-footer#disable_css_media'); ?>
                     </tr>
                     <tr valign="top">
                         <th scope="row">Extra feed links</th>
