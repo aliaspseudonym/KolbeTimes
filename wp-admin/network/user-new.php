@@ -52,10 +52,14 @@ if ( isset($_REQUEST['action']) && 'add-user' == $_REQUEST['action'] ) {
 	 		$add_user_errors = new WP_Error( 'add_user_fail', __( 'Cannot add user.' ) );
 		} else {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			wp_new_user_notification( $user_id, 'both' );
 =======
 			wp_new_user_notification( $user_id, null, 'both' );
 >>>>>>> 4474c6bedcde418cd3f1a748b15cc0a8b721f179
+=======
+			wp_new_user_notification( $user_id, $password );
+>>>>>>> 90a1e28f32193f8a69b84f09ec295295bf863c55
 			wp_redirect( add_query_arg( array('update' => 'added'), 'user-new.php' ) );
 			exit;
 		}
@@ -74,7 +78,7 @@ $parent_file = 'users.php';
 require( ABSPATH . 'wp-admin/admin-header.php' ); ?>
 
 <div class="wrap">
-<h1 id="add-new-user"><?php _e( 'Add New User' ); ?></h1>
+<h2 id="add-new-user"><?php _e('Add New User') ?></h2>
 <?php
 if ( ! empty( $messages ) ) {
 	foreach ( $messages as $msg )
@@ -89,18 +93,18 @@ if ( isset( $add_user_errors ) && is_wp_error( $add_user_errors ) ) { ?>
 		?>
 	</div>
 <?php } ?>
-	<form action="<?php echo network_admin_url('user-new.php?action=add-user'); ?>" id="adduser" method="post" novalidate="novalidate">
+	<form action="<?php echo network_admin_url('user-new.php?action=add-user'); ?>" id="adduser" method="post">
 	<table class="form-table">
 		<tr class="form-field form-required">
 			<th scope="row"><label for="username"><?php _e( 'Username' ) ?></label></th>
-			<td><input type="text" class="regular-text" name="user[username]" id="username" autocapitalize="none" autocorrect="off" /></td>
+			<td><input type="text" class="regular-text" name="user[username]" id="username" /></td>
 		</tr>
 		<tr class="form-field form-required">
 			<th scope="row"><label for="email"><?php _e( 'Email' ) ?></label></th>
-			<td><input type="email" class="regular-text" name="user[email]" id="email"/></td>
+			<td><input type="text" class="regular-text" name="user[email]" id="email"/></td>
 		</tr>
 		<tr class="form-field">
-			<td colspan="2"><?php _e( 'A password reset link will be sent to the user via email.' ) ?></td>
+			<td colspan="2"><?php _e( 'Username and password will be mailed to the above email address.' ) ?></td>
 		</tr>
 	</table>
 	<?php wp_nonce_field( 'add-user', '_wpnonce_add-user' ); ?>

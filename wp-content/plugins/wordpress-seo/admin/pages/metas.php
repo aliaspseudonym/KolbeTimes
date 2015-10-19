@@ -35,8 +35,7 @@ $yform->admin_header( true, 'wpseo_titles' );
 					<td>
 						<?php
 						$yform->checkbox( 'forcerewritetitle', __( 'Enable force rewrite titles', 'wordpress-seo' ) );
-						/* translators: %1$s expands to Yoast SEO */
-						echo '<p class="description">', sprintf( __( '%1$s has auto-detected whether it needs to force rewrite the titles for your pages, if you think it\'s wrong and you know what you\'re doing, you can change the setting here.', 'wordpress-seo' ), 'Yoast SEO' ) . '</p>';
+						echo '<p class="description">', __( 'WordPress SEO has auto-detected whether it needs to force rewrite the titles for your pages, if you think it\'s wrong and you know what you\'re doing, you can change the setting here.', 'wordpress-seo' ), '</p>';
 						?>
 					</td>
 				</tr>
@@ -101,8 +100,7 @@ $yform->admin_header( true, 'wpseo_titles' );
 					}
 					$yform->checkbox( 'noindex-' . $name, '<code>noindex, follow</code>', __( 'Meta Robots', 'wordpress-seo' ) );
 					$yform->checkbox( 'showdate-' . $name, __( 'Show date in snippet preview?', 'wordpress-seo' ), __( 'Date in Snippet Preview', 'wordpress-seo' ) );
-					/* translators: %1$s expands to Yoast SEO */
-					$yform->checkbox( 'hideeditbox-' . $name, __( 'Hide', 'wordpress-seo' ), sprintf( __( '%1$s Meta Box', 'wordpress-seo' ), 'Yoast SEO' ) );
+					$yform->checkbox( 'hideeditbox-' . $name, __( 'Hide', 'wordpress-seo' ), __( 'WordPress SEO Meta Box', 'wordpress-seo' ) );
 
 					/**
 					 * Allow adding a custom checkboxes to the admin meta page - Post Types tab
@@ -161,8 +159,7 @@ $yform->admin_header( true, 'wpseo_titles' );
 						$yform->textinput( 'metakey-tax-' . $tax->name, __( 'Meta keywords template', 'wordpress-seo' ) );
 					}
 					$yform->checkbox( 'noindex-tax-' . $tax->name, '<code>noindex, follow</code>', __( 'Meta Robots', 'wordpress-seo' ) );
-					/* translators: %1$s expands to Yoast SEO */
-					$yform->checkbox( 'hideeditbox-tax-' . $tax->name, __( 'Hide', 'wordpress-seo' ), sprintf( __( '%1$s Meta Box', 'wordpress-seo' ), 'Yoast SEO' ) );
+					$yform->checkbox( 'hideeditbox-tax-' . $tax->name, __( 'Hide', 'wordpress-seo' ), __( 'WordPress SEO Meta Box', 'wordpress-seo' ) );
 					echo '<br/><br/>';
 				}
 				unset( $tax );

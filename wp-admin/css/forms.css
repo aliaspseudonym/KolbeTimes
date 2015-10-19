@@ -232,6 +232,7 @@ textarea[readonly] {
    color: #a9a9a9;
 }
 
+<<<<<<< HEAD
 .form-invalid input, .form-invalid input:focus,
 .form-invalid select, .form-invalid select:focus {
 	border-color: #dc3232 !important;
@@ -261,6 +262,15 @@ textarea[readonly] {
 	margin: 0 6px 0 -29px;
 	vertical-align: middle;
 >>>>>>> 4474c6bedcde418cd3f1a748b15cc0a8b721f179
+=======
+.form-invalid {
+	background-color: #ffebe8 !important;
+}
+
+.form-invalid input,
+.form-invalid select {
+	border-color: #c00 !important;
+>>>>>>> 90a1e28f32193f8a69b84f09ec295295bf863c55
 }
 
 .form-input-tip {
@@ -374,7 +384,8 @@ textarea.large-text {
 	width: 99%;
 }
 
-input.regular-text {
+input.regular-text,
+#adduser .form-field input {
 	width: 25em;
 }
 
@@ -422,11 +433,6 @@ input[type="number"].small-text {
 	color: #777;
 }
 
-button.wp-hide-pw > .dashicons {
-	position: relative;
-	top: 3px;
-}
-
 label,
 #your-profile label + a {
 	vertical-align: middle;
@@ -460,77 +466,36 @@ fieldset label,
 #pass-strength-result {
 	background-color: #eee;
 	border: 1px solid #ddd;
-	color: #23282d;
-	margin: -2px 5px 5px 1px;
+	float: left;
+	margin: 13px 5px 5px 1px;
 	padding: 3px 5px;
 	text-align: center;
-	width: 25em;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	opacity: 0;
+	width: 200px;
+	display: none;
 }
 
 #pass-strength-result.short {
-	background-color: #f1adad;
-	border-color: #e35b5b;
-	opacity: 1;
+	background-color: #ffa0a0;
+	border-color: #f04040;
 }
 
 #pass-strength-result.bad {
-	background-color: #fbc5a9;
-	border-color: #f78b53;
-	opacity: 1;
+	background-color: #ffb78c;
+	border-color: #ff853c;
 }
 
 #pass-strength-result.good {
-	background-color: #ffe399;
-	border-color: #ffc733;
-	opacity: 1;
+	background-color: #ffec8b;
+	border-color: #fc0;
 }
 
 #pass-strength-result.strong {
-	background-color: #c1e1b9;
-	border-color: #83c373;
-	opacity: 1;
-}
-
-#pass1.short, #pass1-text.short {
-	border-color: #e35b5b;
-}
-
-#pass1.bad, #pass1-text.bad {
-	border-color: #f78b53;
-}
-
-#pass1.good, #pass1-text.good {
-	border-color: #ffc733;
-}
-
-#pass1.strong, #pass1-text.strong {
-	border-color: #83c373;
-}
-
-.pw-weak {
-	display:none;
+	background-color: #c3ff88;
+	border-color: #8dff1c;
 }
 
 .indicator-hint {
 	padding-top: 8px;
-}
-
-#pass1-text,
-.show-password #pass1 {
-	display: none;
-}
-
-.show-password #pass1-text
-{
-	display: inline-block;
-}
-
-.form-table span.description.important {
-	font-size: 12px;
 }
 
 p.search-box {
@@ -696,7 +661,6 @@ table.form-table td .updated p {
 	width: 15em;
 }
 
-#adduser .form-field input,
 #createuser .form-field input {
 	width: 25em;
 }
@@ -900,10 +864,6 @@ table.form-table td .updated p {
   21.0 - Network Admin
 ------------------------------------------------------------------------------*/
 
-.setup-php textarea {
-	max-width: 100%;
-}
-
 .form-field #site-address {
 	max-width: 25em;
 }
@@ -924,11 +884,6 @@ table.form-table td .updated p {
 	margin-bottom: 5px;
 }
 
-#search-users,
-#search-sites {
-	max-width: 100%;
-}
-
 /*------------------------------------------------------------------------------
    Credentials check dialog for Install and Updates
 ------------------------------------------------------------------------------*/
@@ -939,7 +894,6 @@ table.form-table td .updated p {
 
 .request-filesystem-credentials-dialog .notification-dialog {
 	top: 15%;
-	max-height: 85%;
 }
 
 .request-filesystem-credentials-dialog-content {
@@ -1021,24 +975,16 @@ table.form-table td .updated p {
 		padding-top: 10px;
 	}
 
-	input[type="checkbox"],
-	.widefat th input[type="checkbox"],
-	.widefat thead td input[type="checkbox"],
-	.widefat tfoot td input[type="checkbox"] {
+	input[type="checkbox"], .widefat th input[type="checkbox"] {
 		-webkit-appearance: none;
 		padding: 10px;
 	}
 
-	.widefat th input[type="checkbox"],
-	.widefat thead td input[type="checkbox"],
-	.widefat tfoot td input[type="checkbox"] {
+	.widefat th input[type="checkbox"] {
 		margin-bottom: 8px;
 	}
 
-	input[type="checkbox"]:checked:before,
-	.widefat th input[type="checkbox"]:before,
-	.widefat thead td input[type="checkbox"]:before,
-	.widefat tfoot td input[type="checkbox"]:before {
+	input[type="checkbox"]:checked:before, .widefat th input[type="checkbox"]:before {
 		font: normal 30px/1 'Dashicons';
 		margin: -3px -5px;
 	}
@@ -1076,7 +1022,6 @@ table.form-table td .updated p {
 		font-size: 14px;
 	}
 
-	#adduser .form-field input,
 	#createuser .form-field input {
 		width: 100%;
 	}
@@ -1124,11 +1069,6 @@ table.form-table td .updated p {
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
-	}
-
-	.form-table .form-required.form-invalid td:after {
-		float: right;
-		margin: -30px 3px 0 0;
 	}
 
 	#wpbody .form-table td select {
@@ -1179,10 +1119,8 @@ table.form-table td .updated p {
 	}
 
 	.form-table span.description {
-		display: inline;
 		padding: 4px 0 0;
 		line-height: 1.4em;
-		font-size: 14px;
 	}
 
 	.form-table th {
@@ -1192,20 +1130,8 @@ table.form-table td .updated p {
 	}
 
 	.form-table td {
-		margin-bottom: 0;
-		padding-bottom: 6px;
-		padding-top: 4px;
+		padding-top: 8px;
 		padding-left: 0;
-	}
-
-	.form-table.permalink-structure td code {
-		margin-left: 32px;
-	}
-
-	.form-table.permalink-structure td input[type="text"] {
-		margin-left: 32px;
-		margin-top: 4px;
-		width: 96%;
 	}
 
 	.form-table input.regular-text {
@@ -1235,39 +1161,6 @@ table.form-table td .updated p {
 	.form-field #domain {
 		max-width: none;
 	}
-
-	/* New Password */
-	.wp-pwd {
-		position: relative;
-	}
-
-	.wp-pwd [type="text"],
-	.wp-pwd [type="password"] {
-		padding-right: 40px;
-	}
-
-	.wp-pwd button.button {
-		background: transparent;
-		border: none;
-		-webkit-box-shadow: none;
-		box-shadow: none;
-		line-height: 2;
-		margin: 0;
-		padding: 5px 10px;
-		position: absolute;
-		right: 0;
-		top: 0;
-	}
-
-	.wp-pwd button.button:hover,
-	.wp-pwd button.button:focus,
-	.wp-pwd button.button:active {
-		background: transparent;
-	}
-
-	.wp-pwd .button .text {
-		display: none;
-	}
 }
 
 @media only screen and (max-width: 768px) {
@@ -1288,18 +1181,19 @@ table.form-table td .updated p {
 		max-width: 400px;
 		width: auto;
 	}
+
 }
 
 @media only screen and (max-height: 480px) {
 	/*  Request Credentials */
-	.request-filesystem-credentials-dialog .notification-dialog{
+	.request-filesystem-credentials-dialog	.notification-dialog{
 		width: 100%;
 		height: 100%;
-		max-height: 100%;
 		position: fixed;
 		top: 0;
 		margin: 0;
 		left: 0;
+		overflow-y: auto;
 	}
 }
 
@@ -1310,3 +1204,4 @@ table.form-table td .updated p {
 		width: 49%;
 	}
 }
+

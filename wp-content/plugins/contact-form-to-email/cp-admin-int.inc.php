@@ -17,7 +17,7 @@ if ( 'POST' == $_SERVER['REQUEST_METHOD'] && isset( $_POST[$this->prefix.'_post_
 
 ?>
 <div class="wrap">
-<h1><?php echo $this->plugin_name; ?></h1>
+<h2><?php echo $this->plugin_name; ?></h2>
 
 <input type="button" name="backbtn" value="Back to items list..." onclick="document.location='options-general.php?page=<?php echo $this->menu_parameter; ?>';">
 <br /><br />
@@ -420,7 +420,7 @@ if ( 'POST' == $_SERVER['REQUEST_METHOD'] && isset( $_POST[$this->prefix.'_post_
         </tr>
         <tr valign="top">
         <th scope="row">Send report every</th>
-        <td><input type="text" name="rep_days" size="4" value="<?php echo esc_attr($this->get_option('rep_days', '7')); ?>" /> days</td>
+        <td><input type="text" name="rep_days" size="4" value="<?php echo esc_attr($this->get_option('rep_days', '1')); ?>" /> days</td>
         </tr>        
         <tr valign="top">
         <th scope="row">Send report after this hour (server time)</th>
@@ -464,7 +464,7 @@ if ( 'POST' == $_SERVER['REQUEST_METHOD'] && isset( $_POST[$this->prefix.'_post_
 <div id="metabox_basic_settings" class="postbox" >
   <h3 class='hndle' style="padding:5px;"><span>Note</span></h3>
   <div class="inside">
-   To insert this form in a post/page, use the dedicated icon <?php echo '<img hspace="5" src="'.plugins_url('/images/cp_form.gif', __FILE__).'" alt="'.__('Insert '.$this->plugin_name,'contact-form-to-email').'" /></a>';     ?>
+   To insert this form in a post/page, use the dedicated icon <?php echo '<img hspace="5" src="'.plugins_url('/images/cp_form.gif', __FILE__).'" alt="'.__('Insert '.$this->plugin_name,'cfte').'" /></a>';     ?>
    which has been added to your Upload/Insert Menu, just below the title of your Post/Page edition.
    <br /><br />
   </div>
@@ -476,7 +476,7 @@ if ( 'POST' == $_SERVER['REQUEST_METHOD'] && isset( $_POST[$this->prefix.'_post_
 <p class="submit"><input type="submit" name="submit" id="submit" class="button-primary" value="Save Changes"  /></p>
 
 
-[<a href="http://wordpress.dwbooster.com/support?product=contact-form-to-email&version=1.1.5&ref=dashboard-settings" target="_blank">Request Custom Modifications</a>] | [<a href="<?php echo $this->plugin_URL; ?>" target="_blank">Help</a>]
+[<a href="http://wordpress.dwbooster.com/support?product=contact-form-to-email&version=1.1.2&ref=dashboard-settings" target="_blank">Request Custom Modifications</a>] | [<a href="<?php echo $this->plugin_URL; ?>" target="_blank">Help</a>]
 </form>
 </div>
 <script type="text/javascript">generateCaptcha();</script>
