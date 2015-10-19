@@ -6,10 +6,26 @@ http://www.codepeople.net
 
 error_reporting(7);
 
-if (!ini_get("zlib.output_compression")) ob_clean();
+ob_clean();
 
 if (!isset($_GET["ps"])) $_GET["ps"] = '';
 
+if ($_GET["hdwtest"] == "sessiontest")
+{
+    session_start();
+    session_register("tmpvar");
+    if ($_GET["autocall"]!=1){
+        $_SESSION["tmpvar"] = "ok";
+    } else {
+        if ($_SESSION["tmpvar"]!="ok") {
+            die("Session Error");
+        } else {
+            die("Sessions works on your server!");
+        }
+    }   
+    header("Location: ".$PHP_SELF."?hdwtest=sessiontest&autocall=1" );
+    exit;
+}
 
 if ($_GET["width"] == '' || !is_numeric($_GET["width"])) $_GET["width"] = "180";
 if ($_GET["height"] == '' || !is_numeric($_GET["height"])) $_GET["height"] = "60";
@@ -145,15 +161,8 @@ else
     imagestring ( $image, $font, $x, $y, $str, $text_col);	
 }
 
-function cfwpp_output_handler($img) {
-    header('Content-type: image/png');
-    header('Content-Length: ' . strlen($img));
-    return $img;
-}
-
-ob_start("cfwpp_output_handler");
+header("Content-type: image/png");
 imagepng($image);
-ob_end_flush();
 imagedestroy ($image);
 exit;
 ?>

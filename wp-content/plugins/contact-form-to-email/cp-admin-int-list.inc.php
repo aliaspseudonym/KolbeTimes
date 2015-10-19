@@ -117,7 +117,7 @@ if ($message) echo "<div id='setting-error-settings_updated' class='updated sett
 
 ?>
 <div class="wrap">
-<h1><?php echo $this->plugin_name; ?></h1>
+<h2><?php echo $this->plugin_name; ?></h2>
 
 <script type="text/javascript">
  function cp_addItem()
@@ -244,7 +244,7 @@ if ($message) echo "<div id='setting-error-settings_updated' class='updated sett
            <option value="yes"<?php if ($option == 'yes') echo ' selected'; ?>>Yes</option>
           </select>     
           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-          Send report every: <input type="text" name="cp_cfte_rep_days" size="1" value="<?php echo esc_attr(get_option('cp_cfte_rep_days', '7')); ?>" /> days
+          Send report every: <input type="text" name="cp_cfte_rep_days" size="1" value="<?php echo esc_attr(get_option('cp_cfte_rep_days', '1')); ?>" /> days
           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
           Send after this hour (server time):
           <select name="cp_cfte_rep_hour">
@@ -324,6 +324,6 @@ if ($message) echo "<div id='setting-error-settings_updated' class='updated sett
 </div> 
 
 
-[<a href="http://wordpress.dwbooster.com/support?ref=dashboard" target="_blank">Request Custom Modifications</a>] | [<a href="<a href="<?php echo $this->plugin_URL; ?>" target="_blank">Help</a>]
+[<a href="http://wordpress.dwbooster.com/contact-us" target="_blank">Request Custom Modifications</a>] | [<a href="<a href="<?php echo $this->plugin_URL; ?>" target="_blank">Help</a>]
 </form>
 </div>

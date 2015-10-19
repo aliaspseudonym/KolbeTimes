@@ -162,7 +162,7 @@ class CP_ContactFormToEmail extends CP_CFTEMAIL_BaseClass {
 
 
     public function plugins_loaded() {        
-        load_plugin_textdomain( 'contact-form-to-email', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+        load_plugin_textdomain( 'cfte', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
     }
     
 
@@ -203,14 +203,14 @@ class CP_ContactFormToEmail extends CP_CFTEMAIL_BaseClass {
 
             wp_localize_script($this->prefix.'_builder_script', $this->prefix.'_fbuilder_config'.('_'.$this->print_counter), array('obj' =>
             '{"pub":true,"identifier":"'.('_'.$this->print_counter).'","messages": {
-            	                	"required": "'.str_replace(array('"'),array('\\"'),__($this->get_option('vs_text_is_required', CP_CFEMAIL_DEFAULT_vs_text_is_required),'contact-form-to-email')).'",
-            	                	"email": "'.str_replace(array('"'),array('\\"'),__($this->get_option('vs_text_is_email', CP_CFEMAIL_DEFAULT_vs_text_is_email),'contact-form-to-email')).'",
-            	                	"datemmddyyyy": "'.str_replace(array('"'),array('\\"'),__($this->get_option('vs_text_datemmddyyyy', CP_CFEMAIL_DEFAULT_vs_text_datemmddyyyy),'contact-form-to-email')).'",
-            	                	"dateddmmyyyy": "'.str_replace(array('"'),array('\\"'),__($this->get_option('vs_text_dateddmmyyyy', CP_CFEMAIL_DEFAULT_vs_text_dateddmmyyyy),'contact-form-to-email')).'",
-            	                	"number": "'.str_replace(array('"'),array('\\"'),__($this->get_option('vs_text_number', CP_CFEMAIL_DEFAULT_vs_text_number),'contact-form-to-email')).'",
-            	                	"digits": "'.str_replace(array('"'),array('\\"'),__($this->get_option('vs_text_digits', CP_CFEMAIL_DEFAULT_vs_text_digits),'contact-form-to-email')).'",
-            	                	"max": "'.str_replace(array('"'),array('\\"'),__($this->get_option('vs_text_max', CP_CFEMAIL_DEFAULT_vs_text_max),'contact-form-to-email')).'",
-            	                	"min": "'.str_replace(array('"'),array('\\"'),__($this->get_option('vs_text_min', CP_CFEMAIL_DEFAULT_vs_text_min),'contact-form-to-email')).'",
+            	                	"required": "'.str_replace(array('"'),array('\\"'),__($this->get_option('vs_text_is_required', CP_CFEMAIL_DEFAULT_vs_text_is_required),'cfte')).'",
+            	                	"email": "'.str_replace(array('"'),array('\\"'),__($this->get_option('vs_text_is_email', CP_CFEMAIL_DEFAULT_vs_text_is_email),'cfte')).'",
+            	                	"datemmddyyyy": "'.str_replace(array('"'),array('\\"'),__($this->get_option('vs_text_datemmddyyyy', CP_CFEMAIL_DEFAULT_vs_text_datemmddyyyy),'cfte')).'",
+            	                	"dateddmmyyyy": "'.str_replace(array('"'),array('\\"'),__($this->get_option('vs_text_dateddmmyyyy', CP_CFEMAIL_DEFAULT_vs_text_dateddmmyyyy),'cfte')).'",
+            	                	"number": "'.str_replace(array('"'),array('\\"'),__($this->get_option('vs_text_number', CP_CFEMAIL_DEFAULT_vs_text_number),'cfte')).'",
+            	                	"digits": "'.str_replace(array('"'),array('\\"'),__($this->get_option('vs_text_digits', CP_CFEMAIL_DEFAULT_vs_text_digits),'cfte')).'",
+            	                	"max": "'.str_replace(array('"'),array('\\"'),__($this->get_option('vs_text_max', CP_CFEMAIL_DEFAULT_vs_text_max),'cfte')).'",
+            	                	"min": "'.str_replace(array('"'),array('\\"'),__($this->get_option('vs_text_min', CP_CFEMAIL_DEFAULT_vs_text_min),'cfte')).'",
     	                    	    "previous": "'.str_replace(array('"'),array('\\"'),$previous_label).'",
     	                    	    "next": "'.str_replace(array('"'),array('\\"'),$next_label).'"
             	                }}'
@@ -229,16 +229,13 @@ class CP_ContactFormToEmail extends CP_CFTEMAIL_BaseClass {
             document.<?php echo $this->prefix; ?>_pform<?php echo '_'.$this->print_counter; ?>.cp_ref_page.value = document.location;
             $dexQuery = jQuery.noConflict();<?php if ($this->get_option('cv_enable_captcha', CP_CFEMAIL_DEFAULT_cv_enable_captcha) != 'false') { ?>
             if (document.<?php echo $this->prefix; ?>_pform<?php echo '_'.$this->print_counter; ?>.hdcaptcha_<?php echo $this->prefix; ?>_post.value == '') { setTimeout( "<?php echo $this->prefix; ?>_cerror<?php echo '_'.$this->print_counter; ?>()", 100); return false; }
-            var result = $dexQuery.ajax({ type: "GET", url: "<?php echo $this->get_site_url(); ?>/?ps=<?php echo '_'.$this->print_counter; ?>&<?php echo $this->prefix; ?>_pform_process=2&inAdmin=1&ps=<?php echo '_'.$this->print_counter; ?>&hdcaptcha_<?php echo $this->prefix; ?>_post="+document.<?php echo $this->prefix; ?>_pform<?php echo '_'.$this->print_counter; ?>.hdcaptcha_<?php echo $this->prefix; ?>_post.value, async: false }).responseText;
+            var result = $dexQuery.ajax({ type: "GET", url: "<?php echo $this->get_site_url(); ?>?ps=<?php echo '_'.$this->print_counter; ?>&<?php echo $this->prefix; ?>_pform_process=2&inAdmin=1&ps=<?php echo '_'.$this->print_counter; ?>&hdcaptcha_<?php echo $this->prefix; ?>_post="+document.<?php echo $this->prefix; ?>_pform<?php echo '_'.$this->print_counter; ?>.hdcaptcha_<?php echo $this->prefix; ?>_post.value, async: false }).responseText;
             if (result.indexOf("captchafailed") != -1) {
                 $dexQuery("#captchaimg<?php echo '_'.$this->print_counter; ?>").attr('src', $dexQuery("#captchaimg<?php echo '_'.$this->print_counter; ?>").attr('src')+'&'+Date());
                 setTimeout( "<?php echo $this->prefix; ?>_cerror<?php echo '_'.$this->print_counter; ?>()", 100);
                 return false;
             } else <?php } ?>
-            {
-                document.getElementById("form_structure<?php echo '_'.$this->print_counter; ?>").value = '';    
                 return true;
-            }    
          }
          function <?php echo $this->prefix; ?>_cerror<?php echo '_'.$this->print_counter; ?>(){$dexQuery = jQuery.noConflict();$dexQuery("#hdcaptcha_error<?php echo '_'.$this->print_counter; ?>").css('top',$dexQuery("#hdcaptcha_<?php echo $this->prefix; ?>_post<?php echo '_'.$this->print_counter; ?>").outerHeight());$dexQuery("#hdcaptcha_error<?php echo '_'.$this->print_counter; ?>").css("display","inline");}
         </script>
@@ -280,11 +277,11 @@ class CP_ContactFormToEmail extends CP_CFTEMAIL_BaseClass {
     /* Code for the admin area */
 
     public function plugin_page_links($links) {
-        $customAdjustments_link = '<a href="http://wordpress.dwbooster.com/contact-us">'.__('Request custom changes','contact-form-to-email').'</a>';
+        $customAdjustments_link = '<a href="http://wordpress.dwbooster.com/contact-us">'.__('Request custom changes','cfte').'</a>';
     	array_unshift($links, $customAdjustments_link);
-        $settings_link = '<a href="options-general.php?page='.$this->menu_parameter.'">'.__('Settings','contact-form-to-email').'</a>';
+        $settings_link = '<a href="options-general.php?page='.$this->menu_parameter.'">'.__('Settings','cfte').'</a>';
     	array_unshift($links, $settings_link);
-    	$help_link = '<a href="'.$this->plugin_URL.'">'.__('Help','contact-form-to-email').'</a>';
+    	$help_link = '<a href="'.$this->plugin_URL.'">'.__('Help','cfte').'</a>';
     	array_unshift($links, $help_link);
     	return $links;
     }
@@ -298,7 +295,7 @@ class CP_ContactFormToEmail extends CP_CFTEMAIL_BaseClass {
 
 
     function insert_button() {
-        print '<a href="javascript:send_to_editor(\'[CONTACT_FORM_TO_EMAIL]\');" title="'.__('Insert','contact-form-to-email').' '.$this->plugin_name.'"><img hspace="5" src="'.plugins_url('/images/cp_form.gif', __FILE__).'" alt="'.__('Insert','contact-form-to-email').' '.$this->plugin_name.'" /></a>';
+        print '<a href="javascript:send_to_editor(\'[CONTACT_FORM_TO_EMAIL]\');" title="'.__('Insert','cfte').' '.$this->plugin_name.'"><img hspace="5" src="'.plugins_url('/images/cp_form.gif', __FILE__).'" alt="'.__('Insert','cfte').' '.$this->plugin_name.'" /></a>';
     }
 
 
@@ -775,21 +772,21 @@ class CP_ContactFormToEmail extends CP_CFTEMAIL_BaseClass {
     {
         $form_data = json_decode($this->cleanJSON($str));      
         
-        $form_data[1][0]->title = __($form_data[1][0]->title,'contact-form-to-email');   
-        $form_data[1][0]->description = __($form_data[1][0]->description,'contact-form-to-email');   
+        $form_data[1][0]->title = __($form_data[1][0]->title,'cfte');   
+        $form_data[1][0]->description = __($form_data[1][0]->description,'cfte');   
               
         for ($i=0; $i < count($form_data[0]); $i++)    
         {
-            $form_data[0][$i]->title = __($form_data[0][$i]->title,'contact-form-to-email');   
-            $form_data[0][$i]->userhelpTooltip = __($form_data[0][$i]->userhelpTooltip,'contact-form-to-email'); 
-            $form_data[0][$i]->userhelp = __($form_data[0][$i]->userhelp,'contact-form-to-email'); 
+            $form_data[0][$i]->title = __($form_data[0][$i]->title,'cfte');   
+            $form_data[0][$i]->userhelpTooltip = __($form_data[0][$i]->userhelpTooltip,'cfte'); 
+            $form_data[0][$i]->userhelp = __($form_data[0][$i]->userhelp,'cfte'); 
             if ($form_data[0][$i]->ftype == 'fCommentArea')
-                $form_data[0][$i]->userhelp = __($form_data[0][$i]->userhelp,'contact-form-to-email');   
+                $form_data[0][$i]->userhelp = __($form_data[0][$i]->userhelp,'cfte');   
             else 
                 if ($form_data[0][$i]->ftype == 'fradio' || $form_data[0][$i]->ftype == 'fcheck' || $form_data[0][$i]->ftype == 'fradio')    
                 {
                     for ($j=0; $j < count($form_data[0][$i]->choices); $j++)  
-                        $form_data[0][$i]->choices[$j] = __($form_data[0][$i]->choices[$j],'contact-form-to-email'); 
+                        $form_data[0][$i]->choices[$j] = __($form_data[0][$i]->choices[$j],'cfte'); 
                 } 
         }    
         $str = json_encode($form_data);
@@ -893,9 +890,9 @@ class CP_ContactFormToEmail extends CP_CFTEMAIL_BaseClass {
                     update_option('cp_cfte_last_sent'.$formid, date("Y-m-d ".(get_option('cp_cfte_rep_hour', '')<'10'?'0':'').get_option('cp_cfte_rep_hour', '').":00:00"));
                     $text = '';
                     $forms = $wpdb->get_results("SELECT id,fp_from_email,form_name,rep_days,rep_hour,rep_emails,rep_subject,rep_emailformat,rep_message,rep_enable FROM ".$wpdb->prefix.$this->table_items." WHERE rep_emails<>'' AND rep_enable='yes'");
-                    $attachments = array();
                     foreach ($forms as $form)  // for each form with the reports enabled
-                    {                        
+                    {
+                        $attachments = array();
                         $csv = $this->get_records_csv($form->id, $form->form_name);
                         if ($csv != '')
                         {

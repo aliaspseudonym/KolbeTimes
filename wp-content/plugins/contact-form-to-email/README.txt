@@ -3,7 +3,7 @@ Contributors: codepeople
 Donate link: http://wordpress.dwbooster.com/forms/contact-form-to-email
 Tags: contact form,contact,email,contact form database,form,contact form excel,feedback,captcha,contact form plugin,form to email,form to database,contact form builder,form to csv,wordpress contact form,csv,contact form reports,form to excel,contact form csv,drag and drop contact form,excel
 Requires at least: 3.0.5
-Tested up to: 4.3
+Tested up to: 4.2
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -150,7 +150,7 @@ The following translations are already included in the plugin:
 
 = Updates =
 
-New features has been published in the current Contact Form to Email version 1.2.7 based on the feedback received and we would like to thank you all the people that have supported the development, provided feedback and feature requests. The plugin is currently over the 180,000 downloads/installations and a new set of updates is already being prepared, any feature requests will be welcome. Thank you!
+New features has been published in the current Contact Form to Email version 1.2.1 based on the feedback received and we would like to thank you all the people that have supported the development, provided feedback and feature requests. The plugin is currently over the 105,000 downloads/installations and a new set of updates is already being prepared, any feature requests will be welcome. Thank you!
 
 = New: Form Builder =
 
@@ -466,27 +466,17 @@ When you click a field already added into the contact form builder area, you can
 * Fixed XSS vulnerability
 * Fixed bug in translation functions.
 
-= 1.1.6 =
-* Compatible with the latest WordPress 4.2.3
-* Update to messages list.
-* Better code for captcha image generation.
-* Fixed conflict with zLib library
-* Update to the captcha generation to add content-length header
-
-= 1.1.7 =
-* Update to the h2-h1 tags in the admin interface
-* Fixed bug with the tabs
-* Fixed initialization bug in reports
-* Fixed typo in dutch language
-* Removed unneeded data from the post process
-
-= 1.1.8 =
-* Fixed CSV sample format
-* Updated support links
+Important note: If you are using the Professional version don't update via the WP dashboard but using your personal update link. Contact us if you need further information: http://wordpress.dwbooster.com/support
 
 == Upgrade Notice ==
 
-= 1.1.9 =
-* Default settings updated
+Very Important note: If you are using the Professional version don't update via the WP dashboard but using your personal update link. Contact us if you need further information: http://wordpress.dwbooster.com/support
+
+
+= 1.1.5 =
+* Removed use of esc_sql for numeric values
+* Fixed XSS vulnerability
+* Fixed bug in translation functions.
+
 
 Important note: If you are using the Professional version don't update via the WP dashboard but using your personal update link. Contact us if you need further information: http://wordpress.dwbooster.com/support
